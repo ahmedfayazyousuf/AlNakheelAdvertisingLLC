@@ -1,0 +1,328 @@
+body,
+html {
+  height: 100%;
+}
+
+body.slider__body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slider__container {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.slider__page {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+}
+
+.slider__indicators {
+  position: fixed;
+  left: 18px;
+  top: 50%;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.slider__indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 100px;
+  background-color: #fff;
+  cursor: default;
+}
+.slider__indicator--active {
+  opacity: 0.3;
+}
+
+  section > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+
+/* floating animation for image  */
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+@keyframes hand2 {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-20px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes hand1 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.hand1{
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: hand2 6s ease-in-out infinite;
+  margin-left: -300px;
+  opacity: 0;
+  transition: 2s ;
+
+}
+
+.hand2{
+	overflow: hidden;
+	transform: translatex(0px);
+	animation: hand1 6s ease-in-out infinite;
+  margin-top: -300px;
+  opacity: 0;
+  transition: 2s margin-top, opacity 0.2s;
+
+}
+
+.rfid{
+  opacity: 0;
+  transition: 2s;
+
+}
+
+
+
+.avatar {
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+
+.avatar{
+  margin-left: 900px;
+  transition: 2s;
+}
+
+img { 
+    width: 100%; 
+    height: auto; 
+}
+
+.lady{
+  /* position: relative; */
+  margin-top: -300px;
+  opacity: 0;
+  transition: 2s;
+  animation: 1s;
+  width: 175px;
+  height: 200px;
+}
+
+.pod{
+  width: 505px;
+  height: 400px;
+
+  /* margin-bottom: -200px; */
+  margin-top: 300px;
+  margin-left: -100px;
+  /* bottom: 200px; */
+  opacity: 0;
+  transition: 2s;
+  transform: rotate(0);
+
+}
+
+
+.x{
+  opacity: 0;
+  transition: 1s;
+}
+
+
+
+
+
+.display{
+  transition: 1s;
+  opacity: 0;
+}
+
+.fan{
+  opacity: 0;
+  margin-top: 1000px;
+  transition: 2s;
+}
+
+
+
+@keyframes beat{
+  0%{
+    transform: scale(1.2);
+  }
+
+  50%{
+    transform: scale(1);
+  }
+
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+
+.pgirl{
+  transform: scaleX(1);
+ 
+  margin-top: -2000px;
+  opacity: 0;
+  transition: 2s;
+}
+
+.pic1{
+  margin-top: 900px;
+  opacity: 0;
+  transition: 2s;
+
+}
+
+.pic2{
+  opacity: 0;
+  transition: 2s;
+}
+
+.guy{
+  /* margin-top: -900px; */
+  animation: beat 9s ease-in-out infinite;
+}
+
+.arm{
+  
+  margin-bottom: '-900px';
+}
+
+.run{
+  margin-top: 300px;
+  opacity: 0;
+  transition: 2s;
+}
+
+.ar{
+  margin-top: -300px;
+
+  opacity: 0;
+  transition: 2s;
+}
+
+.multi{
+  margin-top: -300px;
+
+  opacity: 0;
+  transition: 2s;
+}
+
+.artext{
+  margin-left: 200px;
+  opacity: 0;
+  transition: 2s;
+}
+
+.jump{
+  margin-left: 200px;
+  opacity: 0;
+  transition: 2s;
+}
+
+.games{
+  opacity: 0;
+  transition: 1s;
+}
+
+
+.tan{
+  margin-top: -600px;
+  opacity: 0;
+  transition: 2s;
+}
+
+
+.sling{
+margin-top:600px;
+opacity: 0;
+transition: 2s;
+}
+
+.digital{
+  opacity: 0;
+  transition: 2s;
+}
+
+
+.robo{
+margin-right: -900px; 
+opacity: 0;
+transition: 2s;
+}
+
+.object{
+  margin-bottom: 900px;
+  transition: 2s;
+  opacity: 0;
+}
+
+.brain{
+margin-top: -600px;
+opacity: 0;
+transition: 2s;
+}
+
+
+.mech{
+  opacity: 0;
+  transition: 2s;
+}
+
+.otext{
+  opacity: 0;
+}
+

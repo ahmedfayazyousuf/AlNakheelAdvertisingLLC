@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import { motion, useMotionValue } from "framer-motion";
 import { useState, useEffect } from "react";
-import ccontact from '../CodebrewAssets/Images/ContactPage/Connect Us.jpg';
+import ccontact from '../MediaAssets/Homepage/Logo.png';
 import firebase from '../../firebase';
 
 import emailjs from 'emailjs-com'
