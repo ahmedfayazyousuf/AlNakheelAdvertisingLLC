@@ -14,7 +14,7 @@ import WoodenStands from '../MediaAssets/Services/WoodenStands.jpeg';
 import VehicleBranding from '../MediaAssets/Services/VehicleBranding.jpg';
 import bg from '../MediaAssets/Services/bg3.jpg';
 import Footer from "../Footer/index.js";
-import PartnerSlider from "../PartnerSlider/PartnerSlider.jsx";
+
 
 const Services = () =>{
 
@@ -190,7 +190,6 @@ const Services = () =>{
 
 
 
-                <PartnerSlider/>
                 <Footer />
             </div>
         </div>

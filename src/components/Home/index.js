@@ -4,7 +4,6 @@ import video from '../MediaAssets/Homepage/video.mp4';
 import tree from '../MediaAssets/Homepage/tree.png';
 import "../MediaAssets/Styles/App.css";
 import Footer from "../Footer/index.js";
-// import PartnerSlider from "../PartnerSlider/PartnerSlider.jsx";
 
 
 const Home = () =>{
