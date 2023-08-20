@@ -17,11 +17,14 @@
     "framer-motion": "^10.12.17",
     "gsap": "^3.11.5",
     "hammerjs": "^2.0.8",
+    "install": "^0.13.0",
     "jquery": "^3.7.0",
+    "npm": "^9.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

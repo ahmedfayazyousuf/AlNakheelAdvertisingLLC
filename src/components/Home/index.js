@@ -4,6 +4,8 @@ import video from '../MediaAssets/Homepage/video.mp4';
 import tree from '../MediaAssets/Homepage/tree.png';
 import "../MediaAssets/Styles/App.css";
 import Footer from "../Footer/index.js";
+// import PartnerSlider from "../PartnerSlider/PartnerSlider.jsx";
+
 
 const Home = () =>{
  
@@ -48,7 +50,7 @@ const Home = () =>{
                     <source src={video} type='video/mp4' />
                 </video>
                 {/* eslint-disable-next-line */}
-                <div className="contentt" style={{width:'100%',height:'100%', display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',zIndex:'10',position:'absolute',top:'0',left:'0',zIndex:'100', marginTop: '-20px'}}>
+                <div style={{width:'100%',height:'100%', display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',zIndex:'10',position:'absolute',top:'0',left:'0',zIndex:'100', marginTop: '-20px'}}>
                     <p className="every">
                         Where innovation meets impact.
                     </p>
@@ -88,6 +90,9 @@ const Home = () =>{
                 <img src={tree} alt="tree" className="tree"></img>
             </div>
 
+
+
+            {/* <PartnerSlider/> */}
             <Footer />
         </div>
     

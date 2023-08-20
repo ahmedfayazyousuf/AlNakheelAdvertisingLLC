@@ -14,6 +14,7 @@ import WoodenStands from '../MediaAssets/Services/WoodenStands.jpeg';
 import VehicleBranding from '../MediaAssets/Services/VehicleBranding.jpg';
 import bg from '../MediaAssets/Services/bg3.jpg';
 import Footer from "../Footer/index.js";
+import PartnerSlider from "../PartnerSlider/PartnerSlider.jsx";
 
 const Services = () =>{
 
@@ -186,7 +187,10 @@ const Services = () =>{
                         <p style={{}}>3D LED signs are modern advertising displays that use colorful lights to create eye-catching designs. They make images and messages look 3D and pop out, which grabs people's attention. These signs can be used inside or outside by businesses to show off their brand, promotions, or messages in a cool and exciting way. They're energy-efficient and tough, making them a great choice for making a strong impression.</p>
                     </div>
                 </div>
-            
+
+
+
+                <PartnerSlider/>
                 <Footer />
             </div>
         </div>
