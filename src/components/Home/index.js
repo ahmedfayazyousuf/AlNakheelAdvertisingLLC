@@ -1,9 +1,9 @@
 import { useMotionValue } from "framer-motion";
-import React, { useState, useEffect} from "react"
-import video from '../MediaAssets/Homepage/video.mp4'
-import logowhite from '../MediaAssets/Homepage/LogoWhite.png';
+import React, { useState, useEffect} from "react";
+import video from '../MediaAssets/Homepage/video.mp4';
 import tree from '../MediaAssets/Homepage/tree.png';
 import "../MediaAssets/Styles/App.css";
+import Footer from "../Footer/index.js";
 
 const Home = () =>{
  
@@ -39,11 +39,11 @@ const Home = () =>{
     
 
     return( 
-        <div style={{height:'100%', overflow: 'hidden',background:'#29024A'}} id="lol" className="lol">
+        <div style={{height:'100%', overflow: 'hidden',background:'#29024A'}}>
 
             <div className="cursor" style={{transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`, zIndex: '1000000000000000000000000000'}} />
 
-            <div id="girlvid" style={{backgroundSize:'cover',height:'90vh',width:'100vw',overflow:'hidden',position:'relative',marginBottom:'-20px'}}>
+            <div style={{backgroundSize:'cover',height:'90vh',width:'100vw',overflow:'hidden',position:'relative',marginBottom:'-20px'}}>
                 <video id="background-video2" autoPlay loop muted style={{height: '100%', width: '100vw',zIndex:'0',position:'relative',objectFit:'cover'}}>
                     <source src={video} type='video/mp4' />
                 </video>
@@ -61,57 +61,34 @@ const Home = () =>{
             </div>
 
 
-            <div style={{width:'100%',background:'#29024A',display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <div style={{width:'100%',background:'#29024A',display:'flex',justifyContent:'center',alignItems:'center', paddingTop: '100px', paddingBottom: '100px'}}>
 
                 <div style={{display: 'flex', flexDirection: 'column', width: '60%'}}>
                     <p style={{color:'white',marginBottom:'42px', fontSize: '40px'}}>About Us</p>
-
                     <p className="para">
                         Discover Al Nakheel Advertising LLC: Your Vision, Our Expertise.<br></br>
                     </p>
-
                     <p className="para" style={{color: '#29024a'}}>.</p>
-
                     <p className="para">
                         Located in Ajman, United Arab Emirates, Al Nakheel Advertising LLC stands as a dynamic Advertising Company specializing in signage, marketing, branding, and printing media services. With a track record spanning 14 years, we've left an indelible mark on the industry, serving esteemed clients throughout the UAE.    
                     </p>
-
                     <p className="para" style={{color: '#29024a'}}>.</p>
-
                     <p className="para">
                         Our forte lies in crafting captivating visuals and seamlessly bringing them to life through our cutting-edge production setup. From conceptualization to installation, we pride ourselves on precision and creativity that know no bounds.
                     </p>
-
                     <p className="para" style={{color: '#29024a'}}>.</p>
-
                     <p className="para">
                         Our journey has been adorned with partnerships with renowned organizations, companies, and institutes, solidifying our reputation as a trusted name in the field.
                     </p>
-
                     {/* eslint-disable-next-line */}
                     <a href="https://api.whatsapp.com/send?phone=971506328029&text=Hello!" target="_blank">
                         <button className="bookacall" style={{marginTop: '30px'}}>Get in touch</button>   
                     </a>
-                    
                 </div>
-                {/* eslint-disable-next-line */}
-                <img src={tree} className="tvclass"></img>
+                <img src={tree} alt="tree" className="tree"></img>
             </div>
 
-
-            <div className="fooooter">
-
-                    <div  style={{display:'flex', width: '50%', alignItems:'center'}}>
-                        {/* eslint-disable-next-line */}
-                        <img style={{width:'35px', marginLeft: '20px'}} src={logowhite}></img>
-                    </div>
-
-                    <div style={{display:'flex', width: '50%', alignItems:'center', justifyContent: 'flex-end', padding: '0', margin: '0'}}>
-                        <p className="foottext"> © Al Nakheel Advertising LLC 2023.<br></br>
-                        <span style={{fontSize: '10px'}}>All rights reserved.</span>
-                        <span style={{fontSize: '10px', marginLeft: '10px'}}>Privacy Policy</span></p>
-                    </div>
-            </div>
+            <Footer />
         </div>
     
     )
