@@ -39,6 +39,25 @@ p, h1{
   font-size:18px;
 }
 
+.parahead{
+  color:white;
+  margin-bottom:42px;
+  font-size: 40px;
+}
+
+.paradiv{
+  display: flex;
+  flex-direction: column;
+  width: 60%; 
+}
+
+.navtext{
+  font-size: 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+  color: white
+}
+
 /* CURSOR CUSTOM  */
 .cursor{
   position: absolute;
@@ -365,6 +384,19 @@ h1{
   }        
   .para{
     color:white;
-    font-size:12px;
+    font-size:14px;
+    text-align: center;
+  }
+  .parahead{
+    text-align: center;
+  }
+  .paradiv{
+    width: 80%; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navtext{
+    font-size: 12px;
   }
 }

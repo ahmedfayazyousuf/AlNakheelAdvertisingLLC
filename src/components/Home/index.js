@@ -65,8 +65,8 @@ const Home = () =>{
 
             <div style={{width:'100%',background:'#29024A',display:'flex',justifyContent:'center',alignItems:'center', paddingTop: '100px', paddingBottom: '100px'}}>
 
-                <div style={{display: 'flex', flexDirection: 'column', width: '60%'}}>
-                    <p style={{color:'white',marginBottom:'42px', fontSize: '40px'}}>About Us</p>
+                <div className="paradiv">
+                    <p className="parahead">About Us</p>
                     <p className="para">
                         Discover Al Nakheel Advertising LLC: Your Vision, Our Expertise.<br></br>
                     </p>

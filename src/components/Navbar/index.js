@@ -48,7 +48,7 @@ const Navbar = () => {
         
             <span className="navbar-brand" style={{flex:'20%',cursor:'pointer',justifyContent:'start', flexDirection: 'row', display: 'flex', alignItems: 'center'}}>
                 <img className='navbars' style={{marginLeft:'15px', width: '40px'}} src={logo} onClick={Home} alt="the hanging house logo"/>
-                <p onClick={Home} style={{fontSize: '20px', marginLeft: '15px', marginTop: '10px', color: 'white'}}>Al Nakheel Advertising LLC</p>
+                <p onClick={Home} className='navtext'>Al Nakheel Advertising LLC</p>
             </span>
             {/* <p style={{fontSize: '25px', marginLeft: '15px', color: 'white'}}>Al Nakheel Advertising LLC</p> */}
 
