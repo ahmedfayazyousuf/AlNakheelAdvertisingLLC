@@ -56,11 +56,11 @@ const Services = () =>{
         <div style={{width: '100vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',backgroundRepeat:'no-repeat',backgroundPosition: 'center center',backgroundSize:'cover',backgroundImage:`url('${bg}')`}}>
             <div className="cursor" style={{transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`, zIndex: '1000000000000000000000000000'}} />
 
-            <div style={{backgroundSize:'cover',height:'500px',width:'100vw',overflow:'hidden',position:'relative',marginBottom:'-20px'}}>
+            <div className="serviceCoverVid">
                 <video id="background-video2" autoPlay loop muted style={{height: '100%', width: '100vw',zIndex:'0',position:'relative',objectFit:'cover'}}>
                     <source src={video} type='video/mp4' />
                 </video>
-                <div style={{width:'100%',height:'100%', display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',position:'absolute',top:'0',left:'0',zIndex:'100', marginTop: '-20px'}}>
+                <div style={{width:'100%',height:'100%', display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',position:'absolute',top:'0',left:'0',zIndex:'100'}}>
                     <h1 style={{color: 'white'}} >
                         SERVICES
                     </h1>

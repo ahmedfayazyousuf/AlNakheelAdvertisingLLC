@@ -311,6 +311,15 @@ h1{
   text-align: right;
 }
 
+.serviceCoverVid{
+  background-size:cover;
+  height:500px;
+  width:100vw;
+  overflow:hidden;
+  position:relative;
+  margin-bottom:-20px;
+}
+
 
 
 
@@ -380,5 +389,8 @@ h1{
   }
   .servicetextPara{
     font-size: 9px;
+  }
+  .serviceCoverVid{
+    height:200px;
   }
 }
