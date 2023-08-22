@@ -6,7 +6,7 @@ html, body{
 
 button{
   background: white;
-  width: 150px;
+  width: 170px;
   height: 50px;
   border:0;
 }
@@ -364,20 +364,20 @@ h1{
   }
   .serviceitem{
     width: 100vw;
-    height: 150px;
+    height: 170px;
   }
   .serviceimg{
     width: 100%;
-    height: 150px; 
+    height: 170px; 
   }
   .servicetextR{
     width: 500px;
-    height: 150px; 
+    height: 170px; 
     padding: 20px;
   }
   .servicetextL{
     width: 500px;
-    height: 150px; 
+    height: 170px; 
     padding: 20px;
   }
   .servicetextheaderR{
@@ -387,7 +387,7 @@ h1{
     font-size: 12px;
   }
   .servicetextPara{
-    font-size: 8px;
+    font-size: 9px;
   }
   .serviceCoverVid{
     height:200px;
