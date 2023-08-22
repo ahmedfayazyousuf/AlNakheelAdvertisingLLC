@@ -7,19 +7,19 @@ const Footer = () => {
 
     const handleLinkClick = (event) => {
         event.preventDefault();
-        window.location.href = 'https://www.facebook.com/webrewcode';
+        window.location.href = 'https://www.facebook.com/alnakheeladvert';
     };
     const handleLinkClick2 = (event) => {
         event.preventDefault();
-        window.location.href = 'https://api.whatsapp.com/send?phone=971505217178&text=Hello!';
+        window.location.href = 'https://api.whatsapp.com/send?phone=971506328029&text=Hello!';
     };
     const handleLinkClick3 = (event) => {
         event.preventDefault();
-        window.location.href = 'https://www.instagram.com/webrewcode/';
+        window.location.href = 'https://www.instagram.com/alnakheeladv/';
     };
     const handleLinkClick4 = (event) => {
         event.preventDefault();
-        window.location.href = 'https://www.linkedin.com/company/webrewcode/';
+        window.location.href = 'https://www.linkedin.com/company/alnakheeladv/';
     };
 
   return (
