@@ -25,12 +25,12 @@ const Footer = () => {
   return (
     <div style={{background: 'black', width: '100vw', height: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 
-        <div  style={{display:'flex', width: '33.33%', alignItems:'center'}}>
+        <div  style={{display:'flex', width: '50%', alignItems:'center'}}>
             {/* eslint-disable-next-line */}
             <img style={{width:'35px', marginLeft: '20px'}} src={logowhite}></img>
-        </div>
+        {/* </div> */}
 
-        <div  style={{display:'flex', width: '33.33%', alignItems:'center', margin: '0', padding: '0', justifyContent: 'center'}}>
+        {/* <div  style={{display:'flex', width: '33.33%', alignItems:'center', margin: '0', padding: '0', justifyContent: 'center'}}> */}
             <button className="facebook socialbutton" onClick={handleLinkClick} style={{marginLeft: '20px'}} >
                 <FontAwesomeIcon icon={faFacebook} aria-hidden="true" />
             </button> 
@@ -45,11 +45,11 @@ const Footer = () => {
             </button>
         </div>
 
-        <div style={{display:'flex', width: '33.33%', alignItems:'flex-end', justifyContent: 'flex-end', margin: '0', paddingLeft: '10px', flexDirection: 'column'}}>
-            <p className="foottext" style={{justifySelf: 'flex-end'}}>© Codebrew 2023. All rights reserved.</p>
-            <a href="https://www.webrewcode.com/PrivacyPolicy">
+        <div style={{display:'flex', width: '50%', alignItems:'flex-end', justifyContent: 'flex-end', margin: '0', paddingLeft: '10px', flexDirection: 'column'}}>
+            <p className="foottext" style={{justifySelf: 'flex-end'}}>© Al Nakheel Advertising LLC 2023. All rights reserved.</p>
+            {/* <a href="https://www.webrewcode.com/PrivacyPolicy">
                 <p className="foottext2" style={{justifySelf: 'flex-end', cursor: 'grab'}}>Privacy Policy</p>
-            </a>
+            </a> */}
         </div> 
     </div>
   );
