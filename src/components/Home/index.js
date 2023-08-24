@@ -13,7 +13,6 @@ import { useMotionValue } from "framer-motion";
 import React, { useState, useEffect} from "react";
 import video from '../MediaAssets/Homepage/video.mp4';
 import tree from '../MediaAssets/Homepage/tree.png';
-import ee from '../MediaAssets/Homepage/Logo.png';
 import "../MediaAssets/Styles/App.css";
 import Footer from "../Footer/index.js";
 
@@ -124,40 +123,40 @@ const Home = () =>{
                 aria-label="My Favorite Images"
                 >
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '40px'}} src={Abbar} alt="Image 1"/>
+                    <img alt='img' style={{height: '40px'}} src={Abbar}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '60px'}} src={Ghurair} alt="Image 2"/>
+                    <img alt='img' style={{height: '60px'}} src={Ghurair}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '80px'}} src={Landmark} alt="Image 3"/>
+                    <img alt='img' style={{height: '80px'}} src={Landmark}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '90px'}} src={OTW} alt="Image 1"/>
+                    <img alt='img' style={{height: '90px'}} src={OTW}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '60px'}} src={Ramada} alt="Image 2"/>
+                    <img alt='img' style={{height: '60px'}} src={Ramada}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '60px'}} src={Riviera} alt="Image 3"/>
+                    <img alt='img' style={{height: '60px'}} src={Riviera}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '120px'}} src={Rixos} alt="Image 1"/>
+                    <img alt='img' style={{height: '120px'}} src={Rixos}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '100px'}} src={Sheraton} alt="Image 2"/>
+                    <img alt='img' style={{height: '100px'}} src={Sheraton}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '80px'}} src={Swissotel} alt="Image 3"/>
+                    <img alt='img' style={{height: '80px'}} src={Swissotel}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '60px'}} src={TapaKing} alt="Image 3"/>
+                    <img alt='img' style={{height: '60px'}} src={TapaKing}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '140px'}} src={UOK} alt="Image 3"/>
+                    <img alt='img' style={{height: '140px'}} src={UOK}/>
                 </SplideSlide>
                 <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img style={{height: '120px'}} src={UOS} alt="Image 3"/>
+                    <img alt='img' style={{height: '120px'}} src={UOS}/>
                 </SplideSlide>
             </Splide>
 
