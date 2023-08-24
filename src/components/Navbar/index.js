@@ -21,16 +21,16 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                        <NavLink className="nav-link hoverable" to="/Projects" style={{fontWeight: '300'}}>
-                           Projects
+                        <NavLink className="nav-link hoverable" to="/Projects" style={{fontWeight: '300', marginRight:'25px'}}>
+                           Gallery
                         </NavLink>
                     </li>
 
-                    <li>
+                    {/* <li>
                         <NavLink className="nav-link hoverable"  to="/Contact" style={{fontWeight: '300', marginRight:'25px'}}>
                             Get in Touch
                         </NavLink>
-                    </li>
+                    </li> */}
                 </>
             )
     }

@@ -113,6 +113,10 @@ const Home = () =>{
                 <img src={tree} alt="tree" className="tree"></img>
             </div>
 
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom: '-60px'}}>
+                <p className="parahead">Our Clients</p>
+            </div>
+
             <Splide
                 options={ {
                     type   : 'loop',
