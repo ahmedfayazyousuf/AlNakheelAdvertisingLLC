@@ -1,9 +1,34 @@
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+// Default theme
+import '@splidejs/react-splide/css';
+
+// or other themes
+import '@splidejs/react-splide/css/skyblue';
+import '@splidejs/react-splide/css/sea-green';
+
+// or only core styles
+import '@splidejs/react-splide/css/core';
+
 import { useMotionValue } from "framer-motion";
 import React, { useState, useEffect} from "react";
 import video from '../MediaAssets/Homepage/video.mp4';
 import tree from '../MediaAssets/Homepage/tree.png';
+import ee from '../MediaAssets/Homepage/Logo.png';
 import "../MediaAssets/Styles/App.css";
 import Footer from "../Footer/index.js";
+
+import Abbar from '../MediaAssets/Homepage/Clients/Abbar.png';
+import Ghurair from '../MediaAssets/Homepage/Clients/Ghurair.png';
+import Landmark from '../MediaAssets/Homepage/Clients/Landmark.png';
+import OTW from '../MediaAssets/Homepage/Clients/OTW.png';
+import Ramada from '../MediaAssets/Homepage/Clients/Ramada.png';
+import Riviera from '../MediaAssets/Homepage/Clients/Riviera.png';
+import Rixos from '../MediaAssets/Homepage/Clients/Rixos.png';
+import Sheraton from '../MediaAssets/Homepage/Clients/Sheraton.png';
+import Swissotel from '../MediaAssets/Homepage/Clients/Swissotel.png';
+import TapaKing from '../MediaAssets/Homepage/Clients//Tapa King.png';
+import UOK from '../MediaAssets/Homepage/Clients/UOK.png';
+import UOS from '../MediaAssets/Homepage/Clients/UOS.png';
 
 
 const Home = () =>{
@@ -89,9 +114,53 @@ const Home = () =>{
                 <img src={tree} alt="tree" className="tree"></img>
             </div>
 
+            <Splide
+                options={ {
+                    type   : 'loop',
+                    drag   : 'free',
+                    snap   : true,
+                    perPage: 5,
+                } } style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+                aria-label="My Favorite Images"
+                >
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '40px'}} src={Abbar} alt="Image 1"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '60px'}} src={Ghurair} alt="Image 2"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '80px'}} src={Landmark} alt="Image 3"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '90px'}} src={OTW} alt="Image 1"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '60px'}} src={Ramada} alt="Image 2"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '60px'}} src={Riviera} alt="Image 3"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '120px'}} src={Rixos} alt="Image 1"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '100px'}} src={Sheraton} alt="Image 2"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '80px'}} src={Swissotel} alt="Image 3"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '60px'}} src={TapaKing} alt="Image 3"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '140px'}} src={UOK} alt="Image 3"/>
+                </SplideSlide>
+                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                    <img style={{height: '120px'}} src={UOS} alt="Image 3"/>
+                </SplideSlide>
+            </Splide>
 
-
-            {/* <PartnerSlider/> */}
             <Footer />
         </div>
     
