@@ -96,7 +96,7 @@ const Home = () =>{
                     </p>
                     <p className="para" style={{color: '#29024a'}}>.</p>
                     <p className="para">
-                        Located in Ajman, United Arab Emirates, Al Nakheel Advertising LLC stands as a dynamic Advertising Company specializing in signage, marketing, branding, and printing media services. With a track record spanning 14 years, we've left an indelible mark on the industry, serving esteemed clients throughout the UAE.    
+                        Located in Ajman, United Arab Emirates, Al Nakheel Advertising LLC stands as a dynamic Advertising Company specializing in signage, marketing, branding, and printing media services. With a track record spanning 16 years, we've left an indelible mark on the industry, serving esteemed clients throughout the UAE.    
                     </p>
                     <p className="para" style={{color: '#29024a'}}>.</p>
                     <p className="para">
