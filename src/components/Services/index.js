@@ -12,6 +12,7 @@ import RollupBanner from '../MediaAssets/Services/RollupBanner.jpeg';
 import WallBranding from '../MediaAssets/Services/WallBranding.jpeg';
 import WoodenStands from '../MediaAssets/Services/WoodenStands.jpeg';
 import VehicleBranding from '../MediaAssets/Services/VehicleBranding.jpg';
+import WebDev from '../MediaAssets/Services/WebDev.jpg';
 import bg from '../MediaAssets/Services/bg3.jpg';
 import Footer from "../Footer/index.js";
 import video from '../MediaAssets/Services/video.mp4';
@@ -198,6 +199,18 @@ const Services = () =>{
                     <div className="servicetextR">
                         <p className="servicetextheaderR">VEHICLE BRANDING</p> 
                         <p className="servicetextPara">Vehicle branding is like giving a vehicle a stylish makeover with custom graphics, logos, or messages. It's a way to turn cars, trucks, or even buses into mobile billboards for businesses or causes. <span className="hideinphone">Vehicle branding helps to grab attention on the road and promote a brand or message wherever the vehicle goes. It can include full or partial wraps that cover the vehicle's surface with eye-catching designs. Vehicle branding is a creative and effective way to make a strong impression and reach a wide audience while on the move. It's like turning your vehicle into a rolling advertisement that gets noticed wherever it travels.</span></p>
+                    </div>
+                </div>
+
+
+                <div className="serviceitem">
+                    <div className="servicetextL">
+                        <p className="servicetextheaderL">WEBSITE DEVELOPMENT</p> 
+                        <p className="servicetextPara" style={{textAlign: 'right'}}>Website development is like building a digital space on the internet. It involves creating and designing web pages that people can visit to find information, products, or services. <span className="hideinphone">Developers use programming languages and tools to bring these pages to life and make them interactive. Website development encompasses everything from layout and design to functionality and user experience. It's like constructing a virtual storefront or platform where businesses or individuals can showcase themselves, connect with customers, and share content. In a nutshell, website development is the process of crafting and launching a presence on the web.</span> </p>
+                    </div>
+                    
+                    <div className="serviceimg" style={{backgroundImage:`url('${WebDev}')`}}>
+
                     </div>
                 </div>
 
