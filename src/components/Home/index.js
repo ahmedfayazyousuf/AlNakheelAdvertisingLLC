@@ -61,6 +61,7 @@ const Home = () =>{
         }
     }, [])
 
+
     
 
     return( 
@@ -117,52 +118,109 @@ const Home = () =>{
                 <p className="parahead">Our Clients</p>
             </div>
 
-            <Splide
-                options={ {
-                    type   : 'loop',
-                    drag   : 'free',
-                    snap   : true,
-                    perPage: 5,
-                } } style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
-                aria-label="My Favorite Images"
-                >
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '40px'}} src={Abbar}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '60px'}} src={Ghurair}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '80px'}} src={Landmark}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '90px'}} src={OTW}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '60px'}} src={Ramada}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '60px'}} src={Riviera}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '120px'}} src={Rixos}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '100px'}} src={Sheraton}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '80px'}} src={Swissotel}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '60px'}} src={TapaKing}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '140px'}} src={UOK}/>
-                </SplideSlide>
-                <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                    <img alt='img' style={{height: '120px'}} src={UOS}/>
-                </SplideSlide>
-            </Splide>
+            <div className="splide clientsDesktop">
+                <Splide
+                    options={ {
+                        type   : 'loop',
+                        drag   : 'free',
+                        snap   : true,
+                        perPage: 5,
+                    } } style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
+                    aria-label="My Favorite Images"
+                    >
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '40px'}} src={Abbar}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Ghurair}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '80px'}} src={Landmark}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '90px'}} src={OTW}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Ramada}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Riviera}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '120px'}} src={Rixos}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '100px'}} src={Sheraton}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '80px'}} src={Swissotel}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={TapaKing}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '140px'}} src={UOK}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '120px'}} src={UOS}/>
+                    </SplideSlide>
+                </Splide>
+            </div>
+
+
+
+
+
+            <div className="clientsMobile">
+                <Splide
+                    options={ {
+                        type   : 'loop',
+                        drag   : 'free',
+                        snap   : true,
+                        perPage: 2,
+                    }} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '400px'}}
+                    aria-label="My Favorite Images"
+                    >
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '20px'}} src={Abbar}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '30px'}} src={Ghurair}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '40px'}} src={Landmark}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '45px'}} src={OTW}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '30px'}} src={Ramada}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '30px'}} src={Riviera}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Rixos}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '50px'}} src={Sheraton}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '40px'}} src={Swissotel}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '30px'}} src={TapaKing}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '70px'}} src={UOK}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={UOS}/>
+                    </SplideSlide>
+                </Splide>
+            </div>
+
+            
 
             <Footer />
         </div>
