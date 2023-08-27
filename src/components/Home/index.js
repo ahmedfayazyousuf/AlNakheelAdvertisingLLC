@@ -29,6 +29,15 @@ import TapaKing from '../MediaAssets/Homepage/Clients//Tapa King.png';
 import UOK from '../MediaAssets/Homepage/Clients/UOK.png';
 import UOS from '../MediaAssets/Homepage/Clients/UOS.png';
 
+import Hilton from '../MediaAssets/Homepage/Clients/Hilton.png';
+import Ramee from '../MediaAssets/Homepage/Clients/Ramee.png';
+import Chowking from '../MediaAssets/Homepage/Clients/Chowking.png';
+import Wingstop from '../MediaAssets/Homepage/Clients/Wingstop.png';
+import Fairmont from '../MediaAssets/Homepage/Clients/Fairmont.png';
+
+import WHO from '../MediaAssets/Homepage/Clients/WHO.png';
+import IHC from '../MediaAssets/Homepage/Clients/IHC.png';
+
 
 const Home = () =>{
  
@@ -164,6 +173,27 @@ const Home = () =>{
                     <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
                         <img alt='img' style={{height: '100px'}} src={UOS}/>
                     </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '100px'}} src={Hilton}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '110px'}} src={Ramee}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '100px'}} src={Chowking}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Wingstop}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Fairmont}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '100px'}} src={WHO}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '100px'}} src={IHC}/>
+                    </SplideSlide>
                 </Splide>
             </div>
 
@@ -216,6 +246,27 @@ const Home = () =>{
                     </SplideSlide>
                     <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
                         <img alt='img' style={{height: '60px'}} src={UOS}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Hilton}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Ramee}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Chowking}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Wingstop}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={Fairmont}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={WHO}/>
+                    </SplideSlide>
+                    <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
+                        <img alt='img' style={{height: '60px'}} src={IHC}/>
                     </SplideSlide>
                 </Splide>
             </div>
