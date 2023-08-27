@@ -257,10 +257,10 @@ const Home = () =>{
                         <img alt='img' style={{height: '60px'}} src={Chowking}/>
                     </SplideSlide>
                     <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                        <img alt='img' style={{height: '60px'}} src={Wingstop}/>
+                        <img alt='img' style={{height: '35px'}} src={Wingstop}/>
                     </SplideSlide>
                     <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
-                        <img alt='img' style={{height: '60px'}} src={Fairmont}/>
+                        <img alt='img' style={{height: '35px'}} src={Fairmont}/>
                     </SplideSlide>
                     <SplideSlide style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px'}}>
                         <img alt='img' style={{height: '60px'}} src={WHO}/>
