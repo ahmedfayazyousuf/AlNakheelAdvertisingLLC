@@ -28,13 +28,11 @@ import Swissotel from '../MediaAssets/Homepage/Clients/Swissotel.png';
 import TapaKing from '../MediaAssets/Homepage/Clients//Tapa King.png';
 import UOK from '../MediaAssets/Homepage/Clients/UOK.png';
 import UOS from '../MediaAssets/Homepage/Clients/UOS.png';
-
 import Hilton from '../MediaAssets/Homepage/Clients/Hilton.png';
 import Ramee from '../MediaAssets/Homepage/Clients/Ramee.png';
 import Chowking from '../MediaAssets/Homepage/Clients/Chowking.png';
 import Wingstop from '../MediaAssets/Homepage/Clients/Wingstop.png';
 import Fairmont from '../MediaAssets/Homepage/Clients/Fairmont.png';
-
 import WHO from '../MediaAssets/Homepage/Clients/WHO.png';
 import IHC from '../MediaAssets/Homepage/Clients/IHC.png';
 

@@ -3,9 +3,6 @@ import ccontact from '../MediaAssets/Homepage/Logo.png';
 import React from 'react';
 const Contact = () =>{
 
-    
-
-
     return(
         <div style={{width: '100vw', height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             {/* <div className="cursor" style={{transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`, zIndex: '1000000000000000000000000000'}} /> */}
