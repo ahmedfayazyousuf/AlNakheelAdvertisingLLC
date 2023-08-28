@@ -249,6 +249,13 @@ h1{
 }
 
 
+/* YOUTUBE DIVS  */
+.YoutubePhone{
+  display: none; 
+}
+
+.YoutubeDesktop{
+}
 
 /* SERVICES PAGE LAYOUT  */
 
@@ -409,6 +416,13 @@ h1{
   .clientsMobile{
     display:flex;
     width: 290px;
+  }
+  .YoutubePhone{
+    margin-top: 40px;
+    display: flex; 
+  }
+  .YoutubeDesktop{
+    display: none;
   }
 }
 

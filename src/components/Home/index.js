@@ -1,3 +1,4 @@
+import YouTube from 'react-youtube';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 // Default theme
 import '@splidejs/react-splide/css';
@@ -12,7 +13,7 @@ import '@splidejs/react-splide/css/core';
 import { useMotionValue } from "framer-motion";
 import React, { useState, useEffect} from "react";
 import video from '../MediaAssets/Homepage/video.mp4';
-import tree from '../MediaAssets/Homepage/tree.png';
+// import tree from '../MediaAssets/Homepage/tree.png';
 import "../MediaAssets/Styles/App.css";
 import Footer from "../Footer/index.js";
 
@@ -69,7 +70,16 @@ const Home = () =>{
     }, [])
 
 
-    
+
+    // YOUTUBE VIDEO 
+    const videoId = 'fiwunlzTGFI'; // Replace with your actual video ID
+    const opts = {
+        height: '195',
+        width: '320',
+        playerVars: {
+        autoplay: 0,
+        },
+    };
 
     return( 
         <div style={{height:'100%', overflow: 'hidden',background:'#29024A'}}>
@@ -96,7 +106,7 @@ const Home = () =>{
 
             <div style={{width:'100%',background:'#29024A',display:'flex',justifyContent:'center',alignItems:'center', paddingTop: '100px', paddingBottom: '100px'}}>
 
-                <div className="paradiv">
+                <div className="paradiv" style={{display: 'flex', justifyContent: 'center', padding: '10px'}}>
                     <p className="parahead">About Us</p>
                     <p className="para">
                         Discover Al Nakheel Advertising LLC: Your Vision, Our Expertise.<br></br>
@@ -117,9 +127,13 @@ const Home = () =>{
                     <a href="https://api.whatsapp.com/send?phone=971506328029&text=Hello!" target="_blank">
                         <button className="bookacall" style={{marginTop: '30px'}}>Get in touch</button>   
                     </a>
-                </div>
-                <img src={tree} alt="tree" className="tree"></img>
+                    <YouTube className="YoutubePhone" videoId={videoId} opts={opts} />
+                </div>  
+                {/* <img src={tree} alt="tree" className="tree"></img> */}
+                <YouTube className="YoutubeDesktop" videoId={videoId} opts={opts} />
             </div>
+
+            
 
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom: '-60px'}}>
                 <p className="parahead">Our Clients</p>
@@ -198,7 +212,6 @@ const Home = () =>{
 
 
 
-
             <div className="clientsMobile">
                 <Splide
                     options={ {
@@ -269,7 +282,6 @@ const Home = () =>{
                 </Splide>
             </div>
 
-            
 
             <Footer />
         </div>
