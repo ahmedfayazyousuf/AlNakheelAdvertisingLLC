@@ -52,7 +52,7 @@ p, h1{
 }
 
 .navtext{
-  font-size: 16zpx;
+  font-size: 16px;
   margin-left: 15px;
   margin-top: 10px;
   color: white
@@ -448,7 +448,7 @@ h1{
 
 .navbar {
   height: 60px;
-  background-color: #000000;
+  /* background-color: red; */
   position: relative;
 }
 
@@ -506,11 +506,12 @@ h1{
   .nav-elements {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 40px;
     width: 0px;
     height: calc(100vh - 60px); 
     transition: all 0.3s ease-in;
     overflow: hidden;
+    background-color: black;
   }
 
   .nav-elements.active {
