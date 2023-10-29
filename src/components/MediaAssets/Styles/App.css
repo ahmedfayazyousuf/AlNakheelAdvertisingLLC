@@ -320,7 +320,7 @@ h1{
 
 .serviceCoverVid{
   background-size:cover;
-  height:500px;
+  height:100vh;
   width:100vw;
   overflow:hidden;
   position:relative;
@@ -404,9 +404,9 @@ h1{
   .servicetextPara{
     font-size: 9px;
   }
-  .serviceCoverVid{
+  /* .serviceCoverVid{
     height:200px;
-  }
+  } */
   .hideinphone{
     display: none;
   }
@@ -490,7 +490,7 @@ h1{
   height: 2px;
   background-color: #cccccc;
 }
-
+ 
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
