@@ -145,10 +145,15 @@ const Home = () =>{
                         </p>
                     }/>
                     {/* eslint-disable-next-line */}
-                    <a href="https://api.whatsapp.com/send?phone=971506328029&text=Hello!" target="_blank">
-                        <button className="bookacall" style={{marginTop: '30px'}}>Get in touch</button>   
-                    </a>
-                    <YouTube className="YoutubePhone" videoId={videoId} opts={opts} />
+                    <TextAnim Body={
+                        <a href="https://api.whatsapp.com/send?phone=971506328029&text=Hello!" target="_blank">
+                            <button className="bookacall" style={{marginTop: '30px'}}>Get in touch</button>   
+                        </a>
+                    }/>
+
+                    <TextAnim Body={
+                        <YouTube className="YoutubePhone" videoId={videoId} opts={opts} />
+                    }/>
                 </div>  
                 {/* <img src={tree} alt="tree" className="tree"></img> */}
                 <YouTube className="YoutubeDesktop" videoId={videoId} opts={opts} />
