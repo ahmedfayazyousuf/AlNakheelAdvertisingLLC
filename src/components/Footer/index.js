@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faWhatsapp, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import logowhite from '../MediaAssets/Homepage/LogoWhite.png';
+// import logowhite from '../MediaAssets/Homepage/LogoWhite.png';
 
 const Footer = () => {
 
@@ -23,13 +23,15 @@ const Footer = () => {
     };
 
   return (
-    <div style={{background: 'black', width: '100vw', height: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div style={{background: 'black', width: '100vw', height: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',marginBottom: '40px'}}>
+        
+        <div style={{}}>
+            <p className="foottext" style={{justifySelf: 'flex-end'}}>© Al Nakheel Advertising LLC 2023. All rights reserved.</p>
+        </div> 
 
-        <div  style={{display:'flex', width: '50%', alignItems:'center'}}>
+        <div style={{display:'flex', alignItems:'center'}}>
 
-            <img style={{width:'35px', marginLeft: '20px'}} alt="logowhite" src={logowhite}></img>
-
-            <button className="facebook socialbutton" onClick={handleLinkClick} style={{marginLeft: '20px'}} >
+            <button className="facebook socialbutton" onClick={handleLinkClick} style={{}} >
                 <FontAwesomeIcon icon={faFacebook} aria-hidden="true" />
             </button> 
             <button className="whatsapp socialbutton" onClick={handleLinkClick2}>
@@ -42,13 +44,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faLinkedin} aria-hidden="true" />
             </button>
         </div>
-
-        <div style={{display:'flex', width: '50%', alignItems:'flex-end', justifyContent: 'flex-end', margin: '0', paddingLeft: '10px', flexDirection: 'column'}}>
-            <p className="foottext" style={{justifySelf: 'flex-end'}}>© Al Nakheel Advertising LLC 2023. All rights reserved.</p>
-            {/* <a href="https://www.alnakheeladvertising.ae/PrivacyPolicy">
-                <p className="foottext2" style={{justifySelf: 'flex-end', cursor: 'grab'}}>Privacy Policy</p>
-            </a> */}
-        </div> 
+        
     </div>
   );
 }

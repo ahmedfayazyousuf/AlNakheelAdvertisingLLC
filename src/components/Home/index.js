@@ -144,8 +144,9 @@ const Home = () =>{
                             Our journey has been adorned with partnerships with renowned organizations, companies, and institutes, solidifying our reputation as a trusted name in the field.
                         </p>
                     }/>
-                    {/* eslint-disable-next-line */}
+                    
                     <TextAnim Body={
+                        // eslint-disable-next-line
                         <a href="https://api.whatsapp.com/send?phone=971506328029&text=Hello!" target="_blank">
                             <button className="bookacall" style={{marginTop: '30px'}}>Get in touch</button>   
                         </a>
