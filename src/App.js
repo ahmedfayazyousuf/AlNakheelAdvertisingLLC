@@ -1,7 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar.js";
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Services from './components/Services';
@@ -30,3 +30,4 @@ function App() {
 }
 
 export default App;
+// 0566539151
