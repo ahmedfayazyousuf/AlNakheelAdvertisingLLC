@@ -90,19 +90,17 @@ export default function Hero(){
             <div className="cursor" style={{transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`, zIndex: '1000000000000000000000000000',width: isHovering ? '60px' : '30px',height: isHovering ? '60px' : '30px', transition: isHovering ? 'width 0.5s, height 0.5s' : 'width 0.5s, height 0.5s', borderRadius: isHovering ? '200px' : '100px'}} />
 
             <div id="slideHero">
-                <div class="item" style={{backgroundImage: `url('${LEDSign}')`}}>
-                <div id="HoverCursor" class="content HoverCursor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{zIndex:'1000000000000000'}}>
-                        <div class="name">3D LED Signs</div>
-                        <div class="des">3D LED signs are modern advertising displays that use colorful lights to create eye-catching designs. They make images and messages look 3D and pop out, which grabs people's attention. </div>
-                        
-                        <button onClick= {()=> navigate("/Services")} className='buttonDefault' style={{width: '120px', height: '50px', fontSize: '14px'}}>Read more</button>
-                    </div>
-                </div>
                 <div class="item" style={{backgroundImage: `url('${CarBranding}')`}}>
                     <div id="HoverCursor" class="content HoverCursor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{zIndex:'1000000000000000'}}>
                         <div class="name HoverCursor">VEHICLE BRANDING</div>
                         <div class="des">Vehicle branding is like giving a vehicle a stylish makeover with custom graphics, logos, or messages. It's a way to turn cars, trucks, or even buses into mobile billboards for businesses or causes. </div>
-                        
+                        <button onClick= {()=> navigate("/Services")} className='buttonDefault' style={{width: '120px', height: '50px', fontSize: '14px'}}>Read more</button>
+                    </div>
+                </div>
+                <div class="item" style={{backgroundImage: `url('${LEDSign}')`}}>
+                    <div id="HoverCursor" class="content HoverCursor" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{zIndex:'1000000000000000'}}>
+                        <div class="name">3D LED Signs</div>
+                        <div class="des">3D LED signs are modern advertising displays that use colorful lights to create eye-catching designs. They make images and messages look 3D and pop out, which grabs people's attention. </div>
                         <button onClick= {()=> navigate("/Services")} className='buttonDefault' style={{width: '120px', height: '50px', fontSize: '14px'}}>Read more</button>
                     </div>
                 </div>
