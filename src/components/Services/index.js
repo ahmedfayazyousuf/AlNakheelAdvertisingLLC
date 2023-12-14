@@ -60,7 +60,7 @@ const Services = () =>{
 
 
 
-            <div style={{width:'100%',height:'80px', display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'column',position:'sticky',top:'0',left:'0', background: 'black'}}>
+            <div style={{width:'100%',height:'80px', display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'column',position:'sticky',top:'0',left:'0', background: '#29024A'}}>
                 <p style={{color: 'white', fontSize: '40px', marginTop: '10px'}} >
                     SERVICES
                 </p>

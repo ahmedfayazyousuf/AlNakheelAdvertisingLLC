@@ -8,11 +8,6 @@ const Footer = () => {
 
 
     <div className="gallerymain">
-        {/* <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw'}}>
-            <TextAnim Body={
-                <p className="parahead">Our Works</p>
-            }/>
-        </div> */}
 
         <ul className="img-list" >
 
