@@ -24,7 +24,7 @@ const AnimatedText = (props) => {
 
     if (currentRef) {
       observer.observe(currentRef);
-    }
+    } 
 
     return () => {
       if (currentRef) {

@@ -3,21 +3,20 @@ import TextAnim from '../FadeAnimation.jsx';
 import { useMotionValue } from "framer-motion";
 import { useState, useEffect } from "react";
 import React from 'react';
-import TDSigns from '../MediaAssets/Services/3dSigns.jpeg';
-import AcrylicItems from '../MediaAssets/Services/AcrylicItems.jpeg';
-import DigitalPrinting from '../MediaAssets/Services/DigitalPrinting.jpeg';
-import EngravedSigns from '../MediaAssets/Services/EngravedSigns.jpeg';
-import GlassStickers from '../MediaAssets/Services/GlassStickers.jpeg';
-import OutdoorSigns from '../MediaAssets/Services/OutdoorSigns.jpeg';
-import PlotterVinyl from '../MediaAssets/Services/PlotterVinyl.jpeg';
-import RollupBanner from '../MediaAssets/Services/RollupBanner.jpeg';
-import WallBranding from '../MediaAssets/Services/WallBranding.jpeg';
-import WoodenStands from '../MediaAssets/Services/WoodenStands.jpeg';
-import VehicleBranding from '../MediaAssets/Services/VehicleBranding.jpg';
-import WebDev from '../MediaAssets/Services/WebDev.jpg';
-// import bg from '../MediaAssets/Services/bg3.jpg';
-import Footer from "../Footer/index.js";
-import video from '../MediaAssets/Services/video.mp4';
+import TDSigns from '../1_MediaAssets/Services/3dSigns.jpeg';
+import AcrylicItems from '../1_MediaAssets/Services/AcrylicItems.jpeg';
+import DigitalPrinting from '../1_MediaAssets/Services/DigitalPrinting.jpeg';
+import EngravedSigns from '../1_MediaAssets/Services/EngravedSigns.jpeg';
+import GlassStickers from '../1_MediaAssets/Services/GlassStickers.jpeg';
+import OutdoorSigns from '../1_MediaAssets/Services/OutdoorSigns.jpeg';
+import PlotterVinyl from '../1_MediaAssets/Services/PlotterVinyl.jpeg';
+import RollupBanner from '../1_MediaAssets/Services/RollupBanner.jpeg';
+import WallBranding from '../1_MediaAssets/Services/WallBranding.jpeg';
+import WoodenStands from '../1_MediaAssets/Services/WoodenStands.jpeg';
+import VehicleBranding from '../1_MediaAssets/Services/VehicleBranding.jpg';
+import WebDev from '../1_MediaAssets/Services/WebDev.jpg';
+// import Footer from "../Home/Components/Footer/Footer.js";
+// import video from '../1_MediaAssets/Services/video.mp4';
 
 
 const Services = () =>{
@@ -56,10 +55,19 @@ const Services = () =>{
 
 
     return(
-        <div style={{width: '100vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'black'}}>
+        <div style={{width: '100vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: '#29024A'}}>
             <div className="cursor" style={{transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`, zIndex: '1000000000000000000000000000'}} />
 
-            <div className="serviceCoverVid">
+
+
+            <div style={{width:'100%',height:'80px', display:'flex', justifyContent:'center',alignItems:'center',flexDirection:'column',position:'sticky',top:'0',left:'0', background: 'black'}}>
+                <p style={{color: 'white', fontSize: '40px', marginTop: '10px'}} >
+                    SERVICES
+                </p>
+            </div>
+
+                
+            {/* <div className="serviceCoverVid">
                 <video id="background-video2" autoPlay loop muted style={{height: '100vh', width: '100vw',zIndex:'0',position:'relative',objectFit:'cover'}}>
                     <source src={video} type='video/mp4' />
                 </video>
@@ -69,7 +77,7 @@ const Services = () =>{
                     </h1>
                 </div>
              
-            </div>
+            </div> */}
 
             <div className="servicemain">
 
@@ -249,7 +257,7 @@ const Services = () =>{
                 </div>
 
 
-                <div className="serviceitem" style={{marginBottom: '50px'}}>
+                <div className="serviceitem">
                     <div className="servicetextL">
                         <TextAnim Body={
                         <p className="servicetextheaderL">WEBSITE DEVELOPMENT</p> 
@@ -263,10 +271,6 @@ const Services = () =>{
 
                     </div>
                 </div>
-
-
-
-                <Footer />
             </div>
         </div>
     )

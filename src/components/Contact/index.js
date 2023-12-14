@@ -1,4 +1,4 @@
-import ccontact from '../MediaAssets/Homepage/Logo.png';
+import ccontact from '../1_MediaAssets/Homepage/Logo.png';
 import React from 'react';
 const Contact = () =>{
 
