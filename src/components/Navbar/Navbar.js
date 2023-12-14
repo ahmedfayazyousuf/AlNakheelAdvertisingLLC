@@ -39,9 +39,9 @@ function App() {
         <nav className="overlay-menu" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <ul style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
 
-              <li><NavLink onClick={()=>close()} className="nav-link2" to="/" style={{fontWeight: '600'}}> Home</NavLink></li>
-              <li><NavLink onClick={()=>close()} className="nav-link2" to="/Services" style={{fontWeight: '600'}}>Services</NavLink></li>
-              {/* <li><NavLink onClick={()=>close()} className="nav-link2" to="/Contact" style={{fontWeight: '600'}}> Get in Touch</NavLink></li> */}
+              <li><NavLink onClick={()=>close()} className="nav-link2" to="/" style={{fontWeight: '600'}}>HOME</NavLink></li>
+              <li><NavLink onClick={()=>close()} className="nav-link2" to="/Services" style={{fontWeight: '600'}}>SERVICES</NavLink></li>
+              <li><NavLink onClick={()=>close()} className="nav-link2" to="/Works" style={{fontWeight: '600'}}>WORKS</NavLink></li>
           </ul>
         </nav>
       </div>
