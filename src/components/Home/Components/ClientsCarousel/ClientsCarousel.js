@@ -11,8 +11,7 @@ import '@splidejs/react-splide/css/sea-green';
 // or only core styles
 import '@splidejs/react-splide/css/core';
 
-import { useMotionValue } from "framer-motion";
-import React, { useState, useEffect} from "react";
+import React from "react";
 import "../../../1_MediaAssets/Styles/App.css";
 
 
@@ -38,41 +37,9 @@ import IHC from '../../../1_MediaAssets/Homepage/Clients/IHC.png';
 
 
 const ClientsCarousel = () =>{
- 
-    const cursorX = useMotionValue(-100);
-    const cursorY = useMotionValue(-100);
-    // eslint-disable-next-line
-    const springConfig = { damping: 25, stiffness: 700 };
-
-    useEffect(() => {
-        // eslint-disable-next-line
-        const moveCursor = (e) => {
-        cursorX.set(e.clientX - 16)
-        cursorY.set(e.clientY - 16)
-        };
-        // eslint-disable-next-line
-    }, [])
-    
-    const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
-    
-    useEffect(() => {
-        const moveCursor = (e) => {
-            const x = e.clientX - 16
-            const y = e.clientY - 16
-            setCursorXY({ x, y })
-        }
-
-        window.addEventListener('mousemove', moveCursor)
-        return () => {
-        window.removeEventListener('mousemove', moveCursor)
-        }
-    }, [])
 
     return( 
         <div style={{height:'100vh', overflow: 'hidden',background:'black'}}>
-
-            <div className="cursor" style={{transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`, zIndex: '1000000000000000000000000000'}} />
-
 
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '-60px', width: '100vw', paddingTop: '60px'}}>
                 <TextAnim Body={

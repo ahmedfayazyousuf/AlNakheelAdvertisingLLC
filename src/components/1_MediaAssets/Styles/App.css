@@ -24,7 +24,7 @@ p, h1{
   background:transparent;
   color:white;
   border: 1px solid white;
-  width: 300px;
+  /* width: 300px; */
   transition: 0.4s;
 }
 
@@ -36,7 +36,8 @@ p, h1{
 
 .para{
   color:white;
-  font-size:18px;
+  font-size:14px;
+  width: 100%;
 }
 
 .parahead{
@@ -45,10 +46,28 @@ p, h1{
   font-size: 40px;
 }
 
-.paradiv{
+.mainAbout{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.videoAboutDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 30px;
+}
+
+.paraAboutDiv{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
-  width: 60%; 
+  width: 50%;
+  padding: 30px;
 }
 
 .navtext{
@@ -56,43 +75,6 @@ p, h1{
   margin-left: 15px;
   margin-top: 10px;
   color: white
-}
-
-/* CURSOR CUSTOM  */
-.cursor{
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.1s;
-  z-index: 1000;
-}
-.nav-link:hover .cursor{
-  background: #61dafb ;
-}
-body .cursor {
-  pointer-events: none;
-}
-body .cursor__ball {
-  position: fixed;
-  top: 0;
-  left: 0;
-  mix-blend-mode: difference;
-}
-body .cursor__ball circle {
-  fill: #29024A;
-}
-.cursor__ball--big, .cursor__ball--small {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: transform 0.3s;
-  transform: translate(-50%, -50%);
-  z-index: 10000000;
 }
 
 
@@ -191,17 +173,9 @@ body .cursor__ball circle {
 
 
 /* SCROLLBAR  */
+/* SCROLL BAR  */
 ::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-}
-::-webkit-scrollbar-thumb {
-  background: #29024A; 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  display: none;
 }
 
 
@@ -212,27 +186,12 @@ body .cursor__ball circle {
 }
 
 
-/* CURSOR  */
 
 
-.cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 16px;
-  background-color: black;
-  transform: translateY(-50%);
-  mix-blend-mode: difference;
-  background-color: white;
-}
-
-
-/* FONT  */
+/* FONT  */ 
 @font-face{
   font-family: myFont;
-  src:url(TTWellingtonsTrialRegular.otf);
+  src:url('./Fonts/GothamOffice-Regular.otf');
 }
 *{
   font-family: myFont;
@@ -240,20 +199,12 @@ body .cursor__ball circle {
 
 @font-face{
   font-family: myFontBold;
-  src:url(TTWellingtonsTrialBlack.otf);
+  src:url('./Fonts/GothamOffice-Bold.otf');
 }
-h1{
+h1, .fontSpecial{
   font-family: myFontBold;
 }
 
-
-/* YOUTUBE DIVS  */
-.YoutubePhone{
-  display: none; 
-}
-
-.YoutubeDesktop{
-}
 
 /* SERVICES PAGE LAYOUT  */
 
@@ -326,106 +277,15 @@ h1{
   overflow:hidden;
   position:relative;
 }
+.VideoVideo{
+  width: 100%;
+}
 
 /* CLIENTS CAROUSEL  */
 .clientsMobile{
   display: none;
 }
 
-/* MEDIA TAG  */
-@media only screen and (max-width: 1000px) {
-  .foottext{
-    font-size: 11px;
-    text-align: right;
-  } 
-
-  .footer{
-    margin-top: 250px;
-  }
-
-  .tree{
-    display: none;
-  }        
-  .para{
-    color:white;
-    font-size:14px;
-    text-align: center;
-  }
-  .parahead{
-    text-align: center;
-  }
-  .paradiv{
-    width: 80%; 
-    justify-content: center;
-    align-items: center;
-  }
-  .every{
-    font-size: 30px;
-    margin-bottom: 2px;
-  }
-
-  .navtext{
-    font-size: 12px;
-  }
-
-  .servicemain{
-    width: 100vw;
-  }
-  .serviceitem{
-    width: 100vw;
-    height: 170px;
-    border-top: 1px solid #29024A;
-  }
-  .serviceimg{
-    width: 100%;
-    height: 170px; 
-  }
-  .servicetextR{
-    background: white;
-    color: #29024A;
-    border-left: 1px dotted #29024A;
-    width: 500px;
-    height: 170px; 
-    padding: 20px;
-  }
-  .servicetextL{
-    background: white;
-    color: #29024A;
-    border-right: 1px dotted #29024A;
-    width: 500px;
-    height: 170px; 
-    padding: 20px;
-  }
-  .servicetextheaderR{
-    font-size: 12px;
-  }
-  .servicetextheaderL{
-    font-size: 12px;
-  }
-  .servicetextPara{
-    font-size: 9px;
-  }
-  /* .serviceCoverVid{
-    height:200px;
-  } */
-  .hideinphone{
-    display: none;
-  }
-  .clientsDesktop{
-    display: none;
-  }
-  .clientsMobile{
-    display:flex;
-    width: 290px;
-  }
-  .YoutubePhone{
-    margin-top: 40px;
-    display: flex; 
-  }
-  .YoutubeDesktop{
-    display: none;
-  }
-}
 
 
 /* NAVBAR CODE  */
@@ -533,6 +393,20 @@ h1{
 
 
 
+/* MAPS CODE  */
+.maps{
+  background-image: url('../Homepage/Maps.png');
+  height: 200px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maps:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
 
 
 /* HERO PROJECTS CAROUSEL */
@@ -804,6 +678,7 @@ h1{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: red;
   width: 100vw; 
   background: black;
   padding: 2.5%;
@@ -816,7 +691,7 @@ h1{
   .img-list li {
   border: 5px solid transparent;
   box-sizing: border-box;
-  width: 33.33%;
+  width: 300px;
   float: left;
   position: relative;
   cursor: pointer;
@@ -878,7 +753,6 @@ h1{
   transform: scale(1);
   }
 
-  /* Image Text Styles */
 .image-text {
   position: absolute;
   top: 50%;
@@ -890,31 +764,125 @@ h1{
   transition: opacity 0.3s ease;
 }
 
-/* The hover effect */
 .img-list li:hover .image-text {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) { 
+
+/* MEDIA TAG  */
+@media only screen and (max-width: 1000px) {
+  .mainAbout{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .videoAboutDiv{
+    width: 100%;
+    padding: 0;
+    background-color: green;
+  }
+  .paraAboutDiv{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .paraAboutDiv h1{
+    font-size: 30px;
+  }
+
+  .VideoVideo{
+    width: 95vw;
+  }
+
+  .foottext{
+    font-size: 11px;
+    text-align: right;
+  } 
+
+  .footer{
+    margin-top: 250px;
+  }
+
+  .tree{
+    display: none;
+  }        
+  .para{
+    color:white;
+    font-size:14px;
+    text-align: center;
+  }
+  .parahead{
+    text-align: center;
+  }
+  .videoAboutDiv{
+    width: 80%; 
+    justify-content: center;
+    align-items: center;
+  }
+  .every{
+    font-size: 30px;
+    margin-bottom: 2px;
+  }
+  .navtext{
+    font-size: 12px;
+  }
+  .servicemain{
+    width: 100vw;
+  }
+  .serviceitem{
+    width: 100vw;
+    height: 170px;
+    border-top: 1px solid #29024A;
+  }
+  .serviceimg{
+    width: 100%;
+    height: 170px; 
+  }
+  .servicetextR{
+    background: white;
+    color: #29024A;
+    border-left: 1px dotted #29024A;
+    width: 500px;
+    height: 170px; 
+    padding: 20px;
+  }
+  .servicetextL{
+    background: white;
+    color: #29024A;
+    border-right: 1px dotted #29024A;
+    width: 500px;
+    height: 170px; 
+    padding: 20px;
+  }
+  .servicetextheaderR{
+    font-size: 12px;
+  }
+  .servicetextheaderL{
+    font-size: 12px;
+  }
+  .servicetextPara{
+    font-size: 9px;
+  }
+  .hideinphone{
+    display: none;
+  }
+  .clientsDesktop{
+    display: none;
+  }
+  .clientsMobile{
+    display:flex;
+    width: 290px;
+  }
+  .YoutubePhone{
+    margin-top: 40px;
+    display: flex; 
+  }
+  .YoutubeDesktop{
+    display: none;
+  }
   .img-list li {
     width: 100%;
     clear: both; /* Ensure each image takes up a new row */
   }
-}
-
-
-
-
-.maps{
-  background-image: url('../Homepage/Maps.png');
-  height: 200px;
-  width: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.maps:hover{
-  opacity: 0.5;
-  transition: 0.5s;
 }

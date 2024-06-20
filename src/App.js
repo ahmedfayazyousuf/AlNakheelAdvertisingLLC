@@ -1,6 +1,8 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
+
+import CursorTracker from './components/1_MediaAssets/Styles/CursorTracker';
 import Navbar from "./components/Navbar/Navbar.js";
 import Home from './components/Home';
 import Works from './components/Works';
@@ -15,6 +17,7 @@ function App() {
   return (
     <>
       <Router>
+        <CursorTracker />
         <Navbar />
         <Routes>
             <Route exact path="/" element={<Home />} />
