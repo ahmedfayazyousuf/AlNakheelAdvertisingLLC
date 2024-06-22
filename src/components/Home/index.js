@@ -3,6 +3,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
+import Intro from './Components/Intro/Intro.js';
 import About from './Components/About/About.js';
 import HeroCarousel from './Components/HeroCarousel/HeroCarousel.js';
 import ClientsCarousel from './Components/ClientsCarousel/ClientsCarousel.js';
@@ -12,7 +13,9 @@ const Home = () => {
 
     return (
         <div class="con">
-
+            <section style={{background:'black' , height: '100%', width: '100vw', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <Intro />
+            </section>
             <section style={{background: 'black', height: '100vh', width: '100vw', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <HeroCarousel />
             </section>
