@@ -56,17 +56,48 @@
 
 .card {
   position: relative;
-  height: 40%;
-  width: 40%;
-  transition: transform 1500ms;
-  transform-style: preserve-3d;
-  border-radius: 2rem;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
   margin: 20px;
+  border-radius: 2rem;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 2rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+.card-back {
+  background: linear-gradient(-135deg, #d80af8, #0a65f8);
+  transform: rotateY(180deg);
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  backface-visibility: hidden;
   text-align: center;
 }
 
@@ -77,42 +108,57 @@
   border-radius: 2rem;
 }
 
-.card:hover {
-  cursor: pointer;
-  transform: rotateY(180deg) rotateZ(180deg);
-}
-
 .card-title {
   font-size: 24px;
   margin-bottom: 10px;
   font-weight: bold;
-  font-family: -apple-system;
-}
-.back {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-}
-.back {
-  height: 80%;
-  width: 80%;
-  border-radius: 2rem;
-  position: fixed;
-  box-shadow: 0 0 10px 2px rgba(50, 50, 50, 2.5);
-  backface-visibility: hidden;
-  color: aliceblue;
-  background: linear-gradient(-135deg, 
-  #d80af8, #0a65f8);
+  font-family: 'Helvetica Neue';
+  color: white;
+  
 }
 
 .card-description {
   font-size: 16px;
+  padding: 10px;
+  color: aliceblue;
+  font-family: 'Roboto';
 }
-.back {
-  transform: rotateY(180deg) rotateZ(180deg);
+
+@media (max-width: 768px) {
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-description {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Helvetica Neue';
+    color: white;
+  }
+
+  .card-description {
+    font-size: 10px;
+    padding: 6px;
+    color: aliceblue;
+    font-family: 'Roboto';
+  }
 }
 
 
@@ -133,3 +179,22 @@
   perspective: 900px;
   border-radius: 2rem;
 }
+
+@media (max-width: 768px) {
+  .services-container {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-page {
+    padding: 20px 10px;
+  }
+
+  .services-container {
+    gap: 10px;
+  }
+}
+
+
+
