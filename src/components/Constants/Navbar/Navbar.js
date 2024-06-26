@@ -1,7 +1,7 @@
 import './Navbar.css'
-import Burger from '../1_MediaAssets/Homepage/Burger.png';
+import Burger from '../../1_MediaAssets/Homepage/Burger.png';
 import React, { useState, useRef, useEffect } from 'react';
-import ANLogo from '../1_MediaAssets/Homepage/LogoWhite.png'
+import ANLogo from '../../1_MediaAssets/Homepage/LogoWhite.png'
 
 const NavbarMain = () => {
   const [isChecked, setIsChecked] = useState(false);
