@@ -1,33 +1,119 @@
-import ccontact from '../1_MediaAssets/Homepage/Logo.png';
-import React from 'react';
-const Contact = () =>{
+import React, { useState } from 'react';
+import './Contact.css';
+import Footer from '../Constants/Footer';
 
-    return(
-        <div style={{width: '100vw', height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phoneNumber: '',
+    subject: '',
+    message: '',
+  });
 
-            <form className='contactdiv'>
-                <h1 style={{alignSelf: 'start', fontWeight: '900', color: '#E22962', fontSize: '35px'}}>Contact</h1>
-                <p style={{alignSelf: 'start', marginTop: '-12px', color: '#E22962'}}>Let's turn your ideas into reality. </p>
-                <input style={{border: '0.5px solid #E22962', margin: '5px', borderRadius: '0', color: '#E22962'}} className="form-control" type="text" name="from_name" id="name" placeholder="Full Name" required/>
-                <input style={{border: '0.5px solid #E22962', margin: '5px', borderRadius: '0', color: '#E22962'}} className="form-control" type="email" name="from_email" id="email" placeholder="Email Address" required/>
-                <input style={{border: '0.5px solid #E22962', margin: '5px', borderRadius: '0', color: '#E22962'}} className="form-control" type="text" name="subject" id="subject" placeholder="Subject" required/>
-                <textarea className="form-control" type="textarea" name="message" id="message" rows='3'placeholder="For us, the answer is Yes. Now, what's your question?" required style={{border: '0.5px solid #E22962', height: '115px', marginBottom: '0px', borderRadius:' 0', color: '#E22962'}}/>
-                
-                <div>
-                    <p id='error' className="error" style={{color:"red", marginBottom: '-17px', fontWeight: '900', fontSize: '11px'}}></p>
-                </div>
-                
-                <button className="bookacall2" type='submit' style={{marginTop: '20px'}}>Submit</button>
+  const [isPhoneValid, setIsPhoneValid] = useState(true);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+
+    if (name === 'phoneNumber') {
+      const phoneRegex = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+      setIsPhoneValid(phoneRegex.test(value));
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (isPhoneValid) {
+      console.log('Form submitted', formData);
+    } else {
+      alert('Please enter a valid phone number.');
+    }
+  };
+
+  return (
+    <>
+      <div style={{ background: 'black', width: '100vw', height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px' }}>
+        <div className="form-card1">
+          <div className="form-card2">
+            <form className="form" onSubmit={handleSubmit}>
+              <p className="form-heading">Contact Us</p>
+              <p className="para">We're Excited to hear from you!</p>
+              <div className="form-field">
+                <input
+                  required
+                  placeholder="Full Name"
+                  className="input-field"
+                  type="text"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                />
+              </div>
+
+              <div className="form-field">
+                <input
+                  required
+                  placeholder="Email Address"
+                  className="input-field"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                />
+              </div>
+
+              <div className="form-field">
+                <input
+                  required
+                  placeholder="Phone Number"
+                  className="input-field"
+                  type="text"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleInputChange}
+                  style={{ borderColor: isPhoneValid ? 'initial' : 'red' }}
+                />
+                {!isPhoneValid && <span style={{ color: 'red' , fontSize:'0.6em'}}>Invalid number. </span>}
+              </div>
+
+              <div className="form-field">
+                <input
+                  required
+                  placeholder="Subject"
+                  className="input-field"
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                />
+              </div>
+
+              <div className="form-field">
+                <textarea
+                  required
+                  placeholder="Message"
+                  cols="30"
+                  rows="3"
+                  className="input-field"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                ></textarea>
+              </div>
+
+              <button className="sendMessage-btn" type='submit'>Submit</button>
             </form>
-
-            <div class="imagediv">
-                <div style={{width: '300px', height: '500px', backgroundSize: 'contain', backgroundImage: `url('${ccontact}')`}}>
-                    
-                </div>
-            </div>
-
+          </div>
         </div>
-    )
-}
+      </div>
+      <Footer />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;

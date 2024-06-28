@@ -31,7 +31,7 @@ const Home = () => {
             <section style={{background: 'black', height: '100%', width: '100vw', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <ClientsCarousel/>
             </section>
-
+            
             <div class="hover-effect4" style={{position: 'fixed', bottom: '0', right: '0', display: 'flex', flexDirection: 'column', marginRight: '10px', zIndex: '10000000'}}>
                 <ul style={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
                     <li><a href="https://www.facebook.com/alnakheeladvertising" target='_blank' rel="noreferrer noopener" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', textDecoration: 'none'}} title="Facebook"><FaSquareFacebook /></a></li>
