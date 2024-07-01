@@ -37,9 +37,9 @@ const Contact = () => {
 
   return (
     <>
-      <div style={{ background: 'black', width: '100vw', height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '100px' }}>
-        <div className="form-card1">
-          <div className="form-card2">
+      <div style={{ background: 'black', width: '100vw', height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '110px' }}>
+       
+          
             <form className="form" onSubmit={handleSubmit}>
               <p className="form-heading">Contact Us</p>
               <p className="para">We're Excited to hear from you!</p>
@@ -109,8 +109,7 @@ const Contact = () => {
               <button className="sendMessage-btn" type='submit'>Submit</button>
             </form>
           </div>
-        </div>
-      </div>
+        
       <Footer />
     </>
   );
