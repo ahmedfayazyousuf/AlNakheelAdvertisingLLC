@@ -7,17 +7,18 @@
     padding-inline: 2em;
     padding-bottom: 0.4em;
     background-color: #171717;
-    border-radius: 20px;
   }
   
   .form-heading {
     text-align: center;
-    margin: 1.7em;
+    margin: 1.3em;
     color: #c590f1;
-    font-size: 1.6em;
+    font-size: 1.7em;
     background-color: transparent;
     align-self: center;
     font-weight: bold;
+    font-family: BlinkMacSystemFont;
+    font-size: 26px;
   }
   
   .para {
@@ -36,16 +37,15 @@
     border-radius: 10px;
     padding: 0.6em;
     border: none;
-    outline: none;
+    outline: 1px solid #c590f1;
     color: white;
     background-color: #171717;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   }
   
   .input-field {
     background: none;
     border: none;
-    outline: none;
+    outline:  none;
     width: 100%;
     color: #ccd6f6;
     padding-inline: 1em;
@@ -69,25 +69,37 @@
     background-color: #a46fcf;
     color: #000;
     cursor: pointer;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   }
   
-  .form-card1 {
-    background-image: linear-gradient(163deg, #c464ff 0%, #c464ff 100%);
-    border-radius: 22px;
-    transition: all 0.3s;
-  }
-  
-  .form-card1:hover {
-    box-shadow: 0px 0px 30px 1px rgba(227, 100, 255, 0.502);
-  }
-  
-  .form-card2 {
-    border-radius: 0;
-    transition: all 0.2s;
-  }
-  
-  .form-card2:hover {
-    transform: scale(0.98);
-    border-radius: 20px;
-  }
+  @media (max-width: 768px) {
+    .form {
+        width: 90%;
+        padding: 2em;
+    }
+
+    .form-heading {
+        font-size: 1.5em;
+    }
+
+    .para {
+        font-size: 0.8em;
+    }
+
+    .sendMessage-btn {
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-heading {
+        font-size: 1.3em;
+    }
+
+    .para {
+        font-size: 0.7em;
+    }
+
+    .sendMessage-btn {
+        margin-bottom: 1em;
+    }
+}

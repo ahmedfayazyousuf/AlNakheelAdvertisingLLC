@@ -12,7 +12,7 @@ const Intro = () => {
         <div class="welcome-tag">Al Nakheel Advertising LLC</div>
         <h1 class="title">Your Vision, Our Expertise.</h1>
         <p class="subtitle">Our comprehensive advertisment solutions will completely transform your company. Grow the future of your business.</p>
-        <button onClick= {()=> navigate("/Contact")} className='buttonDefault' style={{width: '120px', height: '50px', fontSize: '14px', marginTop: '10px'}}>Contact Us</button>
+        <button onClick= {()=> navigate('/Projects')} className='buttonDefault' style={{width: '120px', height: '50px', fontSize: '14px', marginTop: '10px'}}>View Projects</button>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import Services from './components/Services';
+import  Projects from './components/Projects';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/Services" element={<Services />} />
             <Route exact path="/Works" element={<Works />} />
             <Route exact path="/Contact" element={<Contact />} />
+            <Route exact path="/Projects" element={<Projects />} />
         </Routes>
       </Router>
     </>
