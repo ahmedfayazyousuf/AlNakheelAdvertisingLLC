@@ -1,7 +1,7 @@
 import './Navbar.css'
-import Burger from '../../1_MediaAssets/Homepage/Burger.png';
+import Burger from '../../1_MediaAssets/BrandAssets/Burger.png';
 import React, { useState, useRef, useEffect } from 'react';
-import ANLogo from '../../1_MediaAssets/Homepage/LogoWhite.png'
+import ANLogo from '../../1_MediaAssets/BrandAssets/LogoWhite.png'
 
 const NavbarMain = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -46,7 +46,7 @@ const NavbarMain = () => {
         <input type="checkbox" id="check" checked={isChecked} onChange={handleCheckboxChange} />
 
         <a className="nav-link" style={{margin: '0px 0px 0px 20px', zIndex: '2', cursor: 'pointer'}} href='/'>
-          <img src={ANLogo} style={{width: '50px'}} alt='Imageer'/>
+          <img src={ANLogo} style={{width: '35px'}} alt='Imageer'/>
         </a>
 
         <label htmlFor="check" className="checkbtn">
@@ -55,37 +55,22 @@ const NavbarMain = () => {
 
         <ul>
           <li>
-          {/* eslint-disable-next-line  */}
-            <a className="nav-link" style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('home'); }}>
+            <a className="nav-link" href='/' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy();}}>
               Home 
             </a> 
           </li>
           <li>
-          {/* eslint-disable-next-line  */}
-            <a className="nav-link" style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('about'); }}>
-              About
-            </a>
-          </li>
-          <li>
-          {/* eslint-disable-next-line  */}
-            <a className="nav-link" style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('offerings'); }}>
+            <a className="nav-link" href='/Services' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('offerings'); }}>
               Services
             </a>
           </li>
           <li>
-          {/* eslint-disable-next-line  */}
-            <a className="nav-link" style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('testimonials'); }}>
-              Testimonials
-            </a>
-          </li>
-          <li>
-          {/* eslint-disable-next-line  */}
-            <a className="nav-link" style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('gallery'); }}>
+            <a className="nav-link" href='/Projects' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('gallery'); }}>
               Gallery
             </a>
           </li>
           <li>
-            <a className="nav-link" style={{ color: 'white', cursor: 'pointer' }} href='/Checkout' onClick={() => { closeNavvy(); }}>
+            <a className="nav-link" href='/Contact' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); }}>
               Contact
             </a>
           </li>
