@@ -982,8 +982,48 @@ h1, .fontSpecial{
   opacity: 1;
 }
 
+
+.introduction {
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+  padding: 100px 20px;
+  text-align: center;
+  color: #29024A;
+}
+
+.introduction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-tag {
+  color: white; 
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
 /* MEDIA TAG  */
 @media only screen and (max-width: 1000px) {
+  .content {
+    margin-bottom: 200px;
+  }
   .mainAbout{
     flex-direction: column;
     padding: 10px;

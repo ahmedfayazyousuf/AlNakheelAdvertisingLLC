@@ -81,7 +81,7 @@ nav ul li{
         padding: 20px;
         width:50vw;
         height: 100vh;
-        background-color: black;
+        background-color: #29024a;
         top: 0px; 
         right: -100%;
         text-align: center;
@@ -89,7 +89,7 @@ nav ul li{
         flex-direction: column;
         z-index: 200;
         gap: 0px;
-        /* background-image: url('../SectionImages/MangoTexture.png'); */
+        background-image: url('../../1_MediaAssets/BrandAssets/Texture.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
