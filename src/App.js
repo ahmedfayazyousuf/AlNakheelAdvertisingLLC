@@ -1,5 +1,5 @@
-import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.css';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import 'bootstrap';import 'bootstrap/dist/css/bootstrap.css';
 
 import CursorTracker from './components/1_MediaAssets/Styles/CursorTracker';
 import Navbar from "./components/Constants/Navbar/Navbar.js";
@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-// 0566539151

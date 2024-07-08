@@ -13,8 +13,10 @@ const ProjectDetails = () => {
 
   return (
     <div className="project-details-container">
-      <div className="project-hero">
+      <section className="project-hero">
         <h1>{project.title}</h1>
+      </section>
+      <div>
         <img src={project.mainImage} alt={project.title} className="project-main-image" />
       </div>
       {project.description.map((desc, index) => (

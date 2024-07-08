@@ -3,13 +3,12 @@ import './Footer.css';
 import React from 'react';
 import { FaInstagram, FaFacebook} from 'react-icons/fa'; // Import icons from react-icons library
 // import { FaXTwitter } from "react-icons/fa6";
-import FooterBG from '../../1_MediaAssets/Homepage/Texture.png';
-import Logo from '../../1_MediaAssets/Homepage/LogoWhite.png';
+import FooterBG from '../../1_MediaAssets/BrandAssets/Texture.png';
+import Logo from '../../1_MediaAssets/BrandAssets/LogoWhite.png';
 
 const Footer = () => {
   return (
     <div style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-end', background: '#000', height: '100%', flexDirection: 'row', backgroundImage: `url('${FooterBG}')`, backgroundPosition: 'top', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
-
     <footer className="main-footer" style={{width: '100%'}}>
       <div className="main-footer__top">
         <div className="container">

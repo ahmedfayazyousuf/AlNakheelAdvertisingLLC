@@ -80,7 +80,7 @@
 
 /* Projects Page*/
 .projects-page-container {
-    background-color: #221134;
+    background-color: #0f0b13;
   } 
   
   .projects-page {
@@ -114,8 +114,11 @@
   }
   
   .hero-title {
-    color: #fff;
+    color: transparent; 
+    -webkit-text-stroke: 1px #9a58d0; 
+    text-transform: uppercase; 
+    text-align: center;
+    font-weight: bold;
     font-size: 3em;
     z-index: 1; 
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   }

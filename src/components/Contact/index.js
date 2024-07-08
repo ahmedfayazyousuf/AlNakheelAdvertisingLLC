@@ -1,115 +1,108 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
+import React, { useRef } from 'react';
 import Footer from '../Constants/Footer';
+import Background from '../1_MediaAssets/BrandAssets/Backgrounds/PurpleBanner.jpg';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    subject: '',
-    message: '',
-  });
+  const form = useRef();
 
-  const [isPhoneValid, setIsPhoneValid] = useState(true);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-
-    if (name === 'phoneNumber') {
-      const phoneRegex = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-      setIsPhoneValid(phoneRegex.test(value));
-    }
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
+    document.getElementById("SubmitButton").innerHTML = "Loading...";
     e.preventDefault();
-    if (isPhoneValid) {
-      console.log('Form submitted', formData);
-    } else {
-      alert('Please enter a valid phone number.');
+
+    const formData = new FormData(form.current);
+    const allFieldsFilled = Array.from(formData.values()).every(value => value.trim() !== "");
+
+    if (!allFieldsFilled) {
+      document.getElementById('errorMessage').innerHTML = "Kindly fill in all fields.";
+      setTimeout(function() {
+          document.getElementById('errorMessage').innerHTML = "";
+      }, 4000);
+      document.getElementById("SubmitButton").innerHTML = "Submit";
+      return;
     }
+
+    emailjs.sendForm('service_52qhn6a', 'template_ffrf0g1', form.current, '8N86O_yBWwu-KCl4h')
+      .then((result) => {
+        console.log(result.text);
+        document.getElementById('errorMessage').style.color = "green";
+        document.getElementById('errorMessage').innerHTML = "We will get back to you soon!";      
+        document.getElementById("SubmitButton").innerHTML = "Submit";
+        setTimeout(function() {
+            document.getElementById('errorMessage').innerHTML = "";
+        }, 4000);
+        e.target.reset(); // Reset the form after successful submission
+      }, (error) => {
+        console.log(error.text);
+        document.getElementById('errorMessage').innerHTML = "Error sending message. Please try again later.";
+        setTimeout(function() {
+            document.getElementById('errorMessage').innerHTML = "";
+        }, 4000);
+      });
   };
 
   return (
     <>
-      <div style={{ background: 'black', width: '100vw', height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '110px' }}>
-       
-          
-            <form className="form" onSubmit={handleSubmit}>
-              <p className="form-heading">Contact Us</p>
-              <p className="para">We're Excited to hear from you!</p>
-              <div className="form-field">
-                <input
-                  required
-                  placeholder="Full Name"
-                  className="input-field"
-                  type="text"
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleInputChange}
-                />
-              </div>
+      <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed', width: '100vw', padding: '120px 0px', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '110px' }}>
+        
+        <div className="mainDivContact">
+          <form ref={form} onSubmit={sendEmail} className='ContactForm'>
 
-              <div className="form-field">
-                <input
-                  required
-                  placeholder="Email Address"
-                  className="input-field"
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                />
-              </div>
+            <h1 className="hero-title outlined-text" style={{color: 'transparent', fontSize: '30px'}}>Contact Us</h1>
+            <input className='inputContact' required placeholder="Full Name" type="text" name="fullName" />
+            <input className='inputContact' required placeholder="Email Address" type="email" name="email"  />
+            <input className='inputContact' required placeholder="Phone Number" type="text" name="phoneNumber"/>
+            <input className='inputContact' required placeholder="Subject" type="text" name="subject"/>
+            <textarea className='inputContact' required placeholder="Message" cols="30" rows="3" name="message"></textarea>
+            
+            <div className='errorMessage' id='errorMessage' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', color: 'red', fontSize: '10px', height: '12px'}}></div>
 
-              <div className="form-field">
-                <input
-                  required
-                  placeholder="Phone Number"
-                  className="input-field"
-                  type="text"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
-                  onChange={handleInputChange}
-                  style={{ borderColor: isPhoneValid ? 'initial' : 'red' }}
-                />
-                {!isPhoneValid && <span style={{ color: 'red' , fontSize:'0.6em'}}>Invalid number. </span>}
-              </div>
+            <button id="SubmitButton" style={{fontSize: '14px', width: '100%', background: '#8c4ac1'}}>Submit</button>
+          </form>
 
-              <div className="form-field">
-                <input
-                  required
-                  placeholder="Subject"
-                  className="input-field"
-                  type="text"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleInputChange}
-                />
-              </div>
+          <div className="imagediv">
+            <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-start', width: '100%', gap: '10px', padding: '10px', flexDirection: 'column' }}>
+                <div className="cta">
+                    <FaInstagram className="iii" style={{ color: '#fff', padding: '0', margin: '0', fontSize: '30px' }} />
+                    <a className="button-text" style={{ textDecoration: 'none', color: 'black', fontSize: '10px', padding: '0' }} href="https://www.instagram.com/alnakheeladv" target="_blank" rel="noopener noreferrer">
+                        @alnakheeladv
+                    </a>
+                </div>
 
-              <div className="form-field">
-                <textarea
-                  required
-                  placeholder="Message"
-                  cols="30"
-                  rows="3"
-                  className="input-field"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                ></textarea>
-              </div>
+                <div className="cta">
+                    <FaFacebookSquare className="iii" style={{ color: '#fff', padding: '0', margin: '0', fontSize: '30px' }} />
+                    <a className="button-text" style={{ textDecoration: 'none', color: 'black', fontSize: '10px', padding: '0' }} href="https://www.facebook.com/alnakheeladvertising" target="_blank" rel="noopener noreferrer">
+                        @alnakheeladvertising
+                    </a>
+                </div>
 
-              <button className="sendMessage-btn" type='submit'>Submit</button>
-            </form>
+                <div className="cta">
+                    <FaWhatsapp className="iii" style={{ color: '#fff', padding: '0', margin: '0', fontSize: '30px' }} />
+                    <a className="button-text" style={{ textDecoration: 'none', color: 'black', fontSize: '10px', padding: '0' }} href="https://wa.me/971506328029" target="_blank" rel="noopener noreferrer">
+                        +971 50 632 8029
+                    </a>
+                </div>
+
+                <div className="cta">
+                    <FaLinkedin className="iii" style={{ color: '#fff', padding: '0', margin: '0', fontSize: '30px' }} />
+                    <a className="button-text" style={{ textDecoration: 'none', color: 'black', fontSize: '10px', padding: '0' }} href="https://www.linkedin.com/company/alnakheeladv" target="_blank" rel="noopener noreferrer">
+                        @alnakheeladv
+                    </a>
+                </div>
+
+                <div className="cta">
+                    <MdAlternateEmail className="iii" style={{ color: '#fff', padding: '0', margin: '0', fontSize: '30px' }} />
+                    <p className="button-text" style={{ textDecoration: 'none', color: 'black', fontSize: '10px', padding: '0' }}>
+                        alnakheeladvert@gmail.com
+                    </p>
+                </div>
+            </div>
           </div>
         
+        </div>
+      </div>
       <Footer />
     </>
   );
