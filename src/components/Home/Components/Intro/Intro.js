@@ -1,6 +1,6 @@
 import React from 'react';
 import backdrop from '../../../1_MediaAssets/BrandAssets/Backgrounds/backdrop2.jpg';
-// import { useNavigate } from "react-router-dom";
+ //import { useNavigate } from "react-router-dom";
 
 const Intro = () => {
   // const navigate = useNavigate();
