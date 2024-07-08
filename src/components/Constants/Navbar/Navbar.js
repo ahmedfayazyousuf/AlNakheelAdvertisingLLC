@@ -66,7 +66,12 @@ const NavbarMain = () => {
           </li>
           <li>
             <a className="nav-link" href='/Projects' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('gallery'); }}>
-              Gallery
+              Projects
+            </a>
+          </li>
+          <li>
+            <a className="nav-link" href='/Blogs' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('gallery'); }}>
+              Blogs
             </a>
           </li>
           <li>
