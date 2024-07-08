@@ -5,7 +5,7 @@ import Background from '../1_MediaAssets/BrandAssets/Backgrounds/PurpleBanner.jp
 const BlogsPage = ({ blogs }) => {
   return (
     <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', backgroundColor: 'black', flexDirection: 'column', backgroundImage: `url(${Background})`, backgroundAttachment: 'fixed' }}>
-        <div className="hero-section">
+        <div className="hero-section"> 
           <div className="hero-overlay">
             <div className="hero-content">
               <h1 className="hero-title outlined-text" style={{ color: 'transparent' }}>Blogs</h1>
@@ -13,7 +13,7 @@ const BlogsPage = ({ blogs }) => {
           </div>
         </div>
 
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', flexWrap: 'wrap', padding: '0px' }}>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', flexWrap: 'wrap', paddingBottom: '200px' }}>
           {blogs.map((blog) => (
             <Link to={`/blog/${blog.slug}`} style={{textDecoration: 'none'}}>
             <div key={blog.slug}>
