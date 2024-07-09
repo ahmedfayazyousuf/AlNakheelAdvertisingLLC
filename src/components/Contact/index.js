@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <>
-      <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed', width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '110px' }}>
+      <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed', width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         
         <div className="mainDivContact">
           <form ref={form} onSubmit={sendEmail} className='ContactForm'>

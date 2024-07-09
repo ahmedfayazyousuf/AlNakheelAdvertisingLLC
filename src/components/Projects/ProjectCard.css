@@ -86,6 +86,6 @@
     font-weight: bold;
     font-size: 3em;
     z-index: 1; 
-    padding: 100px;
-    margin: 100px;
+    /* padding: 100px; */
+    /* margin: 100px; */
   }
