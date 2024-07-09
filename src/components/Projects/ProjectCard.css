@@ -1,55 +1,36 @@
 /* Project Cards */
 .project-card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+  background-color: #232024;
+  padding: 20px 10px;
+  border-radius: 10px;
+  transition: transform 0.5s ease; 
   }
   
   .project-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    width: 95%;
+    border-radius: 10px;
   }
   
-  .project-card:hover .project-image {
-    transform: scale(1.1);
+  .project-card:hover {
+    transform: translateY(-5px); /* Lift the card upwards on hover */
   }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .project-card:hover .overlay {
-    opacity: 1;
-  }
-  
+
   .project-title {
-    color: #fff;
-    font-family: BlinkMacSystemFont;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    animation: titleAnimation 1s forwards;
+    color: #9f5dd4;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
   }
   
   .project-link {
@@ -79,38 +60,22 @@
  }
 
 /* Projects Page*/
-.projects-page-container {
-    background-color: #0f0b13;
-  } 
   
-  .projects-page {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 30px;
-  }
-  
-/* Hero styles */
-.hero {
+.projects-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+  .projects-page-container {
     width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  
-  .hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background-color: black;
+    background-image: url('../1_MediaAssets/BrandAssets/Backgrounds/PurpleBanner.jpg');
+    background-attachment: fixed;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    display: grid;
   }
   
   .hero-title {
@@ -121,4 +86,6 @@
     font-weight: bold;
     font-size: 3em;
     z-index: 1; 
+    padding: 100px;
+    margin: 100px;
   }
