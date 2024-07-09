@@ -1,7 +1,6 @@
 import { FaInstagram, FaFacebookSquare, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import React, { useRef } from 'react';
-import Footer from '../Constants/Footer';
 import Background from '../1_MediaAssets/BrandAssets/Backgrounds/PurpleBanner.jpg';
 import emailjs from '@emailjs/browser';
 
@@ -45,7 +44,7 @@ const Contact = () => {
 
   return (
     <>
-      <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed', width: '100vw', padding: '120px 0px', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '110px' }}>
+      <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed', width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '110px' }}>
         
         <div className="mainDivContact">
           <form ref={form} onSubmit={sendEmail} className='ContactForm'>
@@ -103,7 +102,6 @@ const Contact = () => {
         
         </div>
       </div>
-      <Footer />
     </>
   );
 };

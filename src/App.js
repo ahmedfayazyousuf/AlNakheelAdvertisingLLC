@@ -28,10 +28,12 @@ function App() {
           <Route exact path="/Services" element={<Services />} />
           <Route exact path="/Works" element={<Works />} />
           <Route exact path="/Contact" element={<Contact />} />
+          
           <Route path="/Projects" element={<ProjectsPage projects={ProjectsData} />} />
           <Route path="/projects/:id" element={<Project />} />
+
           <Route path="/Blogs" element={<BlogsPage blogs={BlogsData} />} />
-          <Route path="/blog/:id" element={<Blog />} />
+          <Route path="/blog/:slug" element={<Blog />} />
         </Routes>
       </Router>
     </>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import blogs from './BlogsData';
-import Background from '../1_MediaAssets/BrandAssets/Backgrounds/PurpleBanner.jpg';
+import Texture from '../1_MediaAssets/BrandAssets/Texture.png';
 
 const BlogDetails = () => {
   const { slug } = useParams();
@@ -12,24 +12,23 @@ const BlogDetails = () => {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-      
-      <section style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '500px', width: '100vw', textAlign: 'center', backgroundImage: `url(${Background})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
-        <h1 style={{ width: '97vw', maxWidth: '1200px' }}>{blog.title}</h1>
+    <div className="blog-details-container">
+      <section className="hero-sectionw" style={{ backgroundImage: `url(${blog.mainImage})`, backgroundAttachment: 'fixed' }}>
+        <h1 className="hero-titlew">{blog.title}</h1>
       </section>
 
-      <div>
-        <img src={blog.mainImage} alt={blog.title} className="img-fluid mb-4" />
-      </div>
-
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '100vw', textAlign: 'center', gap: '20px' }}>
-        {blog.description.map((desc, index) => (
-          <div key={index}>
-            {desc.title && <h2>{desc.title}</h2>}
-            <p>{desc.paragraph}</p>
-            {desc.image && <img src={desc.image} alt={blog.title} className="img-fluid" />}
-          </div>
-        ))}
+      <div style={{ display: 'flex', width: '100vw', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Texture})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', background: 'rgba(0,0,0,0.9)', backgroundAttachment: 'fixed', padding: '40px 0px' }}>
+        <div className="content-container">
+          {blog.description.map((desc, index) => (
+            <div key={index} className={`content-section ${desc.image ? (index % 2 === 0 ? 'left' : 'right') : 'full-width'}`}>
+              {desc.image && <img src={desc.image} alt={blog.title} className="section-image" />}
+              <div className={`text-container ${desc.image ? (index % 2 === 0 ? 'text-left' : 'text-right') : 'text-full-width'}`}>
+                {desc.title && <h1 className="section-title">{desc.title}</h1>}
+                <p className="section-paragraph">{desc.paragraph}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
     </div>
