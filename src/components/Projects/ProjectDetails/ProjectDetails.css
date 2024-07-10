@@ -1,58 +1,82 @@
 .project-details-container {
-    color: #fff;
-    font-family: Arial;
-    padding: 100px;
-    --color: rgba(114, 114, 114, 0.3);
-    background-color: #150126;
-    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-    background-size: 55px 55px;
-  }
-  
-  .project-hero {
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 40px;
-    width: 100%;
-    height: 200px;
-  }
-  
-  .project-hero h1 {
-    color: transparent; 
-    -webkit-text-stroke: 1px #9a57d1; 
-    text-transform: uppercase; 
-    text-align: center;
-    font-weight: bold;
-    z-index: 1; 
-    font-size: 3em;
-    font-family:Helvetica;
-    margin-bottom: 10px;
-  }
-  
-  .project-hero img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .project-description-section {
-    margin: 20px 0;
-  }
-  
-  .project-description-section p {
-    font-family: Arial;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
-  .project-description-section img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: 10px 0;
-  }
-  
+  color: #fff;
+  font-family: Arial;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #150126;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+  linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.project-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+}
+
+.project-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Adjust opacity and color here */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.project-hero h1 {
+  position: relative; /* Ensure title is on top of overlay */
+  z-index: 2; /* Ensure the title is above the overlay */
+  width: 97vw;
+  max-width: 1200px;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-description-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-description-section p {
+  font-family: Arial;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.project-description-section img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  flex: 1;
+}
+
+.pcontent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width: 1200px;
+  text-align: left;
+  gap: 40px;
+  padding: 0 20px;
+}

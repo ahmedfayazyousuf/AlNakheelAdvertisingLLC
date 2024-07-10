@@ -13,18 +13,17 @@ const ProjectDetails = () => {
 
   return (
     <div className="project-details-container">
-      <section className="project-hero">
+      <section className="project-hero" style={{ backgroundImage: `url(${project.mainImage})`, backgroundAttachment: 'fixed' }}>
         <h1>{project.title}</h1>
       </section>
-      <div>
-        <img src={project.mainImage} alt={project.title} className="project-main-image" />
+      <div className="pcontent-container">
+        {project.description.map((desc, index) => (
+          <div key={index} className="project-description-section" style={{ flexDirection: index % 2 === 0 ? 'row-reverse' : 'row' }}>
+            <p>{desc.paragraph}</p>
+            <img src={desc.image} alt={project.title} className="project-description-image" />
+          </div>
+        ))}
       </div>
-      {project.description.map((desc, index) => (
-        <div key={index} className="project-description-section">
-          <p>{desc.paragraph}</p>
-          <img src={desc.image} alt={project.title} className="project-description-image" />
-        </div>
-      ))}
     </div>
   );
 };
