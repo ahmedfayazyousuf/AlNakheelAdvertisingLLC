@@ -10,10 +10,10 @@ const ProjectDetails = () => {
   if (!project) {
     return <div>Project not found</div>;
   }
-
+ 
   return (
     <div className="blog-details-container">
-      <section className="hero-sectionw" style={{ backgroundImage: `url(${project.mainImage})`, backgroundAttachment: 'fixed' }}>
+      <section className="hero-sectionw" style={{ backgroundImage: `url(${project.mainImage})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <h1 className="hero-titlew">{project.title}</h1>
       </section>
 

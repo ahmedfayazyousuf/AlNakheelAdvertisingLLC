@@ -23,9 +23,8 @@ const ProjectsPage = ({ projects = ProjectsData }) => {
             <div className="blogcard">
               <img src={project.mainImage} className="blogcard-img-top" alt={project.title} />
               <div>
+                <p className="blogcard-date">{project.date} | {project.by}</p>
                 <h1 className="blogcard-title">{project.title}</h1>
-                <p className="blogcard-date">{project.date}</p>
-                <p className="blogcard-by">{project.by}</p>
               </div>
             </div>
           </Link>
