@@ -19,6 +19,8 @@ import BlogsData from './components/MainPages/Blogs/BlogsData.js';
 
 import PrivacyPolicy from './components/PolicyPages/PrivacyPolicy';
 
+import TermsC from './components/TermsC/index.js';
+
 function App() {
   return (
     <>
@@ -37,6 +39,7 @@ function App() {
           <Route path="/blog/:slug" element={<Blog />} />
 
           <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route exact path="/TermsC" element={<TermsC />} />
         </Routes>
       </Router>
     </>
