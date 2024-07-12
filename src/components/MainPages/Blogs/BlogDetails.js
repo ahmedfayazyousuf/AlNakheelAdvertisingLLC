@@ -13,13 +13,13 @@ const BlogDetails = () => {
 
   return (
     <div className="blog-details-container">
-      <section className="hero-sectionw" style={{ backgroundImage: `url(${blog.mainImage})`, backgroundAttachment: 'fixed' }}>
+      <section className="hero-sectionw" style={{ backgroundImage: `url(${blog.mainImage})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <h1 className="hero-titlew">{blog.title}</h1>
       </section>
 
       <div style={{ display: 'flex', width: '100vw', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Texture})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', background: 'rgba(0,0,0,0.9)', backgroundAttachment: 'fixed', padding: '40px 0px' }}>
         <div className="content-container">
-          {blog.description.map((desc, index) => (
+          {blog.description.map((desc, index) => ( 
             <div key={index} className={`content-section ${desc.image ? (index % 2 === 0 ? 'left' : 'right') : 'full-width'}`}>
               {desc.image && <img src={desc.image} alt={blog.title} className="section-image" />}
               <div className={`text-container ${desc.image ? (index % 2 === 0 ? 'text-left' : 'text-right') : 'text-full-width'}`}>

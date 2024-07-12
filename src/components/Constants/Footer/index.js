@@ -4,11 +4,11 @@ import React from 'react';
 import { FaInstagram, FaFacebook} from 'react-icons/fa'; // Import icons from react-icons library
 // import { FaXTwitter } from "react-icons/fa6";
 import FooterBG from '../../1_MediaAssets/BrandAssets/Texture.png';
-import Logo from '../../1_MediaAssets/BrandAssets/LogoWhite.png';
+import Logo from '../../1_MediaAssets/BrandAssets/LogoPurple.png';
 
 const Footer = () => {
   return (
-    <div style={{width: '100vw', display: 'flex', marginTop: '10px', justifyContent: 'center', alignItems: 'flex-end', background: '#000', height: '100%', flexDirection: 'row', backgroundImage: `url('${FooterBG}')`, backgroundPosition: 'top', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+    <div style={{width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', background: '#000', height: '100%', flexDirection: 'row', backgroundImage: `url('${FooterBG}')`, backgroundPosition: 'top', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
     <footer className="main-footer">
       <div className="main-footer__top" style={{ width: '100%', padding: '0', margin: '0px 0px 30px 0px'}}>
         <div className="container" style={{width: '100vw', padding: '0', margin: '0'}}>
@@ -28,11 +28,11 @@ const Footer = () => {
                     <img src={Logo} style={{ width: '40px', marginTop: '0px' }} alt="Logo" />
                   </a>
                 </div>
-                <p className="footer-widget-two__about-text" style={{ fontSize: '14px', lineHeight: '1.5', color: '#fff', width: '90%' }}>
+                <p className="footer-widget-two__about-text" style={{ fontSize: '14px', lineHeight: '1.5', color: 'grey', width: '90%' }}>
                   Our comprehensive advertisment solutions will completely transform your company. Grow the future of your business.
                 </p>
                 
-                  <div style={{display: 'flex', justifyContent:'flex-start', alignItems: 'center', gap: '15px', width: '80%', marginTop: '-10px'}}>                    
+                  <div style={{display: 'flex', justifyContent:'flex-start', alignItems: 'center', gap: '10px', width: '80%', marginTop: '-10px'}}>                    
                     <a href="https://wa.me/971506328029" style={{textDecoration: 'none', color: '#fff'}}>
                         <FaWhatsapp size={27} style={{color: '#a863e0'}} />
                     </a>
@@ -52,7 +52,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-xl-2 col-lg-12 col-md-12 wow fadeInUp" style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', padding: '10px'}} data-wow-delay="200ms">
+            <div className="col-xl-2 col-lg-12 col-md-12 wow fadeInUp" style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px'}} data-wow-delay="200ms">
               <div className="footer-widget-two__column footer-widget-two__link">
                 <div className="footer-widget-two__title-box">
                   <h1 className="footer-widget-two__title" style={{color: '#a863e0'}}>Sitemap</h1>
@@ -71,7 +71,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-12 col-md-12 wow fadeInUp" style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', padding: '10px'}} data-wow-delay="300ms">
+            <div className="col-xl-3 col-lg-12 col-md-12 wow fadeInUp" style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px'}} data-wow-delay="300ms">
               <div className="footer-widget-two__column footer-widget__contact">
                 <div className="footer-widget-two__title-box">
                   <h1 className="footer-widget-two__title" style={{color: '#a863e0'}}>Contact Us</h1>
@@ -110,7 +110,7 @@ const Footer = () => {
       <div className="main-footer__bottom" style={{padding: '30px 0px'}}>
         <div className="container">
           <div className="main-footer__bottom-inner">
-            <p className="main-footer__bottom-text" style={{fontWeight: '300'}}>Made with <FaRegHeart style={{color: '#ff80a8', marginBottom: '3px'}} /> for</p>
+            <p className="main-footer__bottom-text" style={{fontWeight: '300'}}>Made with <FaRegHeart style={{color: '#a863e0', marginBottom: '3px'}} /> for</p>
             <p className="main-footer__bottom-text" style={{fontWeight: '300'}}>©2024 Al Nakheel Advertising LLC. All rights reserved.</p>
           </div>
         </div>

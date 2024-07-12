@@ -45,13 +45,13 @@
 }
 
 .footer-widget__about-text {
-	color: #fff;
+	color: grey;
 	font-size: 14px;
 	margin-bottom: 30px;
 }
 
 .footer-widget__about-text-2 {
-	color: #fff;
+	color: grey;
 	font-size: 14px;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .footer-widget__newsletter-text {
-	color: #fff;
+	color: grey;
 	line-height: 26px;
 	position: relative;
 	display: block;
@@ -133,7 +133,7 @@
 }
 
 .footer-widget__newsletter-btn:hover span {
-	color: #fff;
+	color: grey;
 }
 
 .footer-widget__gallery {
@@ -243,7 +243,7 @@
 
 .footer-widget__contact-text {
 	font-size: 14px;
-	color: #fff;
+	color: grey;
 	margin-top: -10px;
 	margin-bottom: 16px;
 	position: relative;
@@ -266,7 +266,7 @@
 
 .footer-widget__contact-list li p {
 	font-size: 14px;
-	color: #fff;
+	color: grey;
 }
 
 .footer-widget__contact-list li p a {
@@ -276,7 +276,7 @@
 }
 
 .footer-widget__contact-list li p a:hover {
-	color: #fff;
+	color: grey;
 }
 
 .site-footer__social {
@@ -312,7 +312,7 @@
 }
 
 .site-footer__social a:hover {
-	color: #fff;
+	color: grey;
 }
 
 .site-footer__social a+a {
@@ -322,7 +322,7 @@
 .main-footer__bottom {
 	position: relative;
 	display: block;
-	border-top: 2px solid #fff;
+	border-top: 1px solid grey;
 	padding: 32px 0;
 }
 
@@ -335,7 +335,7 @@
 .main-footer__bottom-text {
 	font-size: 14px;
 	line-height: 24px;
-	color: #fff;
+	color: grey;
 	font-weight: 600;
 }
 
@@ -391,7 +391,7 @@
 
 .footer-widget-two__about-text {
 	font-size: 18px;
-	color: #fff;
+	color: grey;
 	line-height: 40px;
 	margin-top: 31px;
 	margin-bottom: 31px;
@@ -425,7 +425,7 @@
 }
 
 .site-footer-two__social a:hover {
-	color: #fff;
+	color: grey;
 	background-color: var(--thm-base);
 }
 
@@ -494,7 +494,7 @@
 	display: flex;
 	align-items: center;
 	font-size: 15px;
-	color: #fff;
+	color: grey;
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
@@ -503,7 +503,7 @@
 	position: relative;
 	display: inline-block;
 	font-size: 10px;
-	color: #fff;
+	color: grey;
 	padding-right: 15px;
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
@@ -557,11 +557,11 @@
 
 .footer-widget-two__contact-list .text p {
 	font-size: 16px;
-	color: #fff; 
+	color: grey; 
 }
 
 .footer-widget-two__contact-list .text p a {
-	color: #fff;
+	color: grey;
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
 }

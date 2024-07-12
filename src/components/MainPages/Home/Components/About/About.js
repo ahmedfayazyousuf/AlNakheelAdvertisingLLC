@@ -5,17 +5,17 @@ import '@splidejs/react-splide/css/skyblue';
 import '@splidejs/react-splide/css/sea-green';
 import '@splidejs/react-splide/css/core';
 import React from "react";
-import Cover from '../../../../1_MediaAssets/BrandAssets/Texture.png'
+import Cover2 from '../../../../1_MediaAssets/BrandAssets/TextureTriangle.png'
 import "../../../../1_MediaAssets/Styles/App.css";
 
 const Home = () =>{
 
     return( 
-        <div style={{width:'100%', background:'#29024A', display:'flex',justifyContent:'center',alignItems:'center', paddingTop: '100px', paddingBottom: '100px', height: '100vh', backgroundImage:`url('${Cover}')`, backgroundPosition: 'bottom', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+        <div style={{width:'100%', background:'rgba(20,20,20,0.7)', display:'flex',justifyContent:'center',alignItems:'center', paddingTop: '100px', paddingBottom: '100px', height: '100vh', backgroundImage:`url('${Cover2}')`, backgroundPosition: 'bottom', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
             
             <div className='mainAbout'>
                 <div className="videoAboutDiv">
-                    <video autoPlay controls className='VideoVideo'>
+                    <video controls className='VideoVideo'>
                         <source src={Video} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
@@ -23,10 +23,10 @@ const Home = () =>{
 
                 <div className="paraAboutDiv">
                     <TextAnim Body={
-                        <h1 className="parahead">About Us</h1>
+                        <h1 className="hero-title outlined-text parahead" style={{marginBottom: '-10px'}}>About Us</h1>
                     }/>
                     <TextAnim Body={
-                        <p className="parahead" style={{margin: '20px 0px', color: 'white', fontSize: '14px'}}>
+                        <p className="parahead" style={{margin: '20px 0px', color: 'grey', fontSize: '14px'}}>
                             Located in the United Arab Emirates, Al Nakheel Advertising LLC is an Advertising Agency that specializes in signage, marketing, branding, and printing media services. With a track record spanning over 16 years, we've left an indelible mark on the industry, serving esteemed clients throughout the UAE. <br /> <br />
                             Our forte lies in crafting captivating visuals and seamlessly bringing them to life through our cutting-edge production setup. From conceptualization to installation, we pride ourselves on precision and creativity that know no bounds.<br />
                         </p>

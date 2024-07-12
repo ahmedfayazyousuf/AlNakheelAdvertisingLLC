@@ -1,7 +1,7 @@
+import Cover2 from '../../1_MediaAssets/BrandAssets/TextureTriangle.png'
 import React from 'react';
 import TDSigns from '../../1_MediaAssets/Services/ServiceImages/3dSigns.jpeg';
 import AcrylicItems from '../../1_MediaAssets/Services/ServiceImages/AcrylicItems.jpeg'; import DigitalPrinting from '../../1_MediaAssets/Services/ServiceImages/DigitalPrinting.jpeg'; import EngravedSigns from '../../1_MediaAssets/Services/ServiceImages/EngravedSigns.jpeg'; import GlassStickers from '../../1_MediaAssets/Services/ServiceImages/GlassStickers.jpeg'; import OutdoorSigns from '../../1_MediaAssets/Services/ServiceImages/OutdoorSigns.jpeg'; import PlotterVinyl from '../../1_MediaAssets/Services/ServiceImages/PlotterVinyl.jpeg'; import RollupBanner from '../../1_MediaAssets/Services/ServiceImages/RollupBanner.jpeg'; import WallBranding from '../../1_MediaAssets/Services/ServiceImages/WallBranding.jpeg'; import WoodenStands from '../../1_MediaAssets/Services/ServiceImages/WoodenStands.jpeg'; import VehicleBranding from '../../1_MediaAssets/Services/ServiceImages/VehicleBranding.jpg'; import WebDev from '../../1_MediaAssets/Services/ServiceImages/WebDev.jpg';
-import servicespagebg from '../../1_MediaAssets/BrandAssets/Backgrounds/PurpleBanner.jpg';
 import Texture from '../../1_MediaAssets/BrandAssets/Backgrounds/PurpleBanner.jpg';
 import Footer from '../../Constants/Footer';
 
@@ -25,7 +25,7 @@ const Services = () => {
     <>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: '#000', backgroundImage: `url(${Texture})`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', minHeight: '100vh', width: '100vw' }}>
 
-        <div className="hero-section" style={{ backgroundImage: `url(${servicespagebg})`, backgroundAttachment: 'fixed' }}>
+      <div className="hero-section" style={{background:'rgba(19,0,36,0.6)', backgroundImage:`url('${Cover2}')`, backgroundPosition: 'bottom', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundAttachment: 'fixed'}}> 
           <div className="hero-overlay">
             <div className="hero-content">
               <h1 className="hero-title outlined-text" style={{ color: 'transparent' }}>Our Services</h1>
@@ -33,7 +33,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="services-page">
+        <div className="services-page" style={{padding: '20px 0px'}}>
           <div className="services-container">
             {services.map((service, index) => (
               <div key={index} className="card">
