@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import blogs from './BlogsData';
 import Texture from '../../1_MediaAssets/BrandAssets/Texture.png';
+import Footer from '../../Constants/Footer';
 
 const BlogDetails = () => {
   const { slug } = useParams();
@@ -30,7 +31,7 @@ const BlogDetails = () => {
           ))}
         </div>
       </div>
-
+      <Footer />
     </div>
   );
 };
