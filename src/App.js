@@ -17,6 +17,7 @@ import BlogsPage from './components/Blogs/index.js';
 import Blog from './components/Blogs/BlogDetails.js';
 import BlogsData from './components/Blogs/BlogsData';
 import PrivacyPolicy from './components/PrivacyPolicy/index.js';
+import TermsC from './components/TermsC/index.js';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/blog/:slug" element={<Blog />} />
 
           <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route exact path="/TermsC" element={<TermsC />} />
         </Routes>
       </Router>
     </>
