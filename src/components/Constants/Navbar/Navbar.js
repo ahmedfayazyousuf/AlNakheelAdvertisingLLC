@@ -1,7 +1,8 @@
-import './Navbar.css'
+import './Navbar.css';
 import Burger from '../../1_MediaAssets/BrandAssets/Burger.png';
 import React, { useState, useRef, useEffect } from 'react';
-import ANLogo from '../../1_MediaAssets/BrandAssets/LogoWhite.png'
+import ANLogo from '../../1_MediaAssets/BrandAssets/LogoWhite.png';
+import { NavLink } from 'react-router-dom';
 
 const NavbarMain = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -45,9 +46,9 @@ const NavbarMain = () => {
       <nav ref={navRef} style={{ zIndex: '10' }}>
         <input type="checkbox" id="check" checked={isChecked} onChange={handleCheckboxChange} />
 
-        <a className="nav-link" style={{margin: '0px 0px 0px 20px', zIndex: '2', cursor: 'pointer'}} href='/'>
+        <NavLink className="nav-link" style={{margin: '0px 0px 0px 20px', zIndex: '2', cursor: 'pointer'}} to='/'>
           <img src={ANLogo} style={{width: '35px'}} alt='Imageer'/>
-        </a>
+        </NavLink>
 
         <label htmlFor="check" className="checkbtn">
           <img src={Burger} alt='Burger' className='Burger' style={{ width: '27px', height: '22px', filter: 'brightness(1000%)' }}></img>
@@ -55,29 +56,29 @@ const NavbarMain = () => {
 
         <ul>
           <li>
-            <a className="nav-link" href='/' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy();}}>
+            <NavLink className="nav-link" to='/' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy();}}>
               Home 
-            </a> 
+            </NavLink> 
           </li>
           <li>
-            <a className="nav-link" href='/Services' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('offerings'); }}>
+            <NavLink className="nav-link" to='/Services' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('offerings'); }}>
               Services
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="nav-link" href='/Projects' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('gallery'); }}>
+            <NavLink className="nav-link" to='/Projects' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('gallery'); }}>
               Projects
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="nav-link" href='/Blogs' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('gallery'); }}>
+            <NavLink className="nav-link" to='/Blogs' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); scrollToSection('gallery'); }}>
               Blogs
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="nav-link" href='/Contact' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); }}>
+            <NavLink className="nav-link" to='/Contact' style={{ color: 'white', cursor: 'pointer' }} onClick={() => { closeNavvy(); }}>
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
