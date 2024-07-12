@@ -16,6 +16,7 @@ import ProjectsData from './components/Projects/data/Projects.js';
 import BlogsPage from './components/Blogs/index.js';
 import Blog from './components/Blogs/BlogDetails.js';
 import BlogsData from './components/Blogs/BlogsData';
+import PrivacyPolicy from './components/PrivacyPolicy/index.js';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
 
           <Route path="/Blogs" element={<BlogsPage blogs={BlogsData} />} />
           <Route path="/blog/:slug" element={<Blog />} />
+
+          <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>
     </>
