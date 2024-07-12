@@ -9,7 +9,7 @@
 	position: relative;
 	display: block;
 	background-color: var(--thm-black);
-	padding: 100px 0px 0px;
+	padding: 30px;
 	overflow: hidden;
 	z-index: 1;
 }
@@ -557,7 +557,7 @@
 
 .footer-widget-two__contact-list .text p {
 	font-size: 16px;
-	color: #fff;
+	color: #fff; 
 }
 
 .footer-widget-two__contact-list .text p a {
@@ -569,6 +569,8 @@
 .footer-widget-two__contact-list .text p a:hover {
 	color: var(--thm-base);
 }
+
+
 
 .main-footer-two__bottom {
 	position: relative;
@@ -597,3 +599,17 @@
 
 
 /* End */
+.main-footer{
+	width: 100vw;
+	
+  }
+  
+  /* RESPONSIVENESS  */
+  @media (max-width: 1000px) {
+	.main-footer{
+	  padding: 0px;
+	}
+	.main-footer__bottom{
+		margin-bottom: 70px;
+	}
+}
