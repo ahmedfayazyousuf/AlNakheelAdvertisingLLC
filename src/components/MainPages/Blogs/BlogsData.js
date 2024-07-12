@@ -67,12 +67,11 @@ const BlogsData = [
       {
         "title": "Large Format Digital Printing: Making a Big Impact",
         "paragraph": "When it comes to making a big impression, large format digital printing is the way to go. This technique produces high-quality, large-scale graphics that are perfect for banners, posters, and signs. The vivid colors and detailed images produced by large format digital printing are sure to draw attention. At Al Nakheel Advertising LLC, we provide top-notch large format printing services that help your business stand out at events, trade shows, or in everyday advertising.",
-        "image": "/images/Blogs/Blog1/img5.jpg"
+        "image": "/images/Blogs/Blog2/img5.jpg"
       },
       {
         "title": "Conclusion",
         "paragraph": "At Al Nakheel Advertising LLC, we understand the power of effective signboards and stickers in elevating your business. Our range of services, including 3D LED signs, acrylic displays, glass stickers, engraved signs, and large format digital printing, are designed to meet your advertising needs and help your brand stand out. Contact us today to discover how we can help you make a lasting impression.",
-        "image": "/images/Blogs/Blog1/img6.jpg"
       }
     ]
   },
