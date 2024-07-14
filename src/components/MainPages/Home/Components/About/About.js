@@ -23,17 +23,17 @@ const Home = () =>{
 
                 <div className="paraAboutDiv">
                     <TextAnim Body={
-                        <h1 className="hero-title outlined-text parahead" style={{marginBottom: '-10px'}}>About Us</h1>
+                        <h1 className="hero-title outlined-text" style={{color: 'transparent', fontSize: '35px', marginBottom: '-15px'}}>About Us</h1>
                     }/>
                     <TextAnim Body={
-                        <p className="parahead" style={{margin: '20px 0px', color: 'grey', fontSize: '14px'}}>
+                        <p className="parahead" style={{margin: '20px 0px', color: 'grey', fontSize: '13px'}}>
                             Located in the United Arab Emirates, Al Nakheel Advertising LLC is an Advertising Agency that specializes in signage, marketing, branding, and printing media services. With a track record spanning over 16 years, we've left an indelible mark on the industry, serving esteemed clients throughout the UAE. <br /> <br />
                             Our forte lies in crafting captivating visuals and seamlessly bringing them to life through our cutting-edge production setup. From conceptualization to installation, we pride ourselves on precision and creativity that know no bounds.<br />
                         </p>
                     }/>
                     
                     <TextAnim Body={
-                        <a href="https://api.whatsapp.com/send?phone=971506328029&text=Hello!" rel="noreferrer noopener" target="_blank">
+                        <a href="/Contact" rel="noreferrer noopener" target="_blank">
                             <button className="bookacall" style={{fontSize: '14px'}}>Get in touch</button>   
                         </a>
                     }/>
