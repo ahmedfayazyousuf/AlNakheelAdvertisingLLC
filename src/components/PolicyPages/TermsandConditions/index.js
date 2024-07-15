@@ -1,10 +1,12 @@
 import React from "react";
 import "./TC.css";
+import TC from './TC-image.jpeg';
+import Footer from '../../Constants/Footer';
 
 const TermsC = () => {
   return (
     <div className="tc-content-container">
-      <section className="tc-hero">
+      <section className="tc-hero" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${TC})`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', minHeight: '70vh', width: '100vw' }}>
         <h1>Terms And Conditions</h1>
       </section>
       <div className="tc-desc-section">
@@ -175,6 +177,7 @@ const TermsC = () => {
           requests to remove links.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -21,6 +21,8 @@ import PrivacyPolicy from './components/PolicyPages/PrivacyPolicy';
 
 import TermsC from './components/PolicyPages/TermsandConditions';
 
+import About from './components/MainPages/About/index.js';
+
 function App() {
   return (
     <>
@@ -40,6 +42,7 @@ function App() {
 
           <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route exact path="/TermsandConditions" element={<TermsC />} />
+          <Route exact path="/About" element={<About />} />
         </Routes>
       </Router>
     </>
