@@ -3,7 +3,7 @@ import backdrop from '../../../../1_MediaAssets/BrandAssets/Backgrounds/backdrop
  //import { useNavigate } from "react-router-dom";
 
 const Intro = () => {
-   //const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <div class="introduction" style={{backgroundImage: `url('${backdrop}')`, height: '100%', width: '100vw', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
       <div class="content">
