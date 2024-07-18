@@ -10,7 +10,7 @@ const Intro = () => {
         <div class="welcome-tag" style={{margin: '0'}}>AL NAKHEEL ADVERTISING LLC</div>
         <h1 className="hero-title outlined-text" style={{color: 'transparent', fontSize: '35px', margin: '0'}}>Your Vision, Our Expertise.</h1>
         <p style={{fontSize: '14px', color: 'white'}}>Empower Your Business with Strategic Advertising Solutions.</p>
-        {/* <button onClick= {()=> navigate('/About')} className='buttonDefault' style={{width: '120px', height: '50px', fontSize: '14px', marginTop: '10px'}}>View Projects</button>*/ }
+        {/* <button onClick= {()=> navigate('/Products')} className='buttonDefault' style={{width: '120px', height: '50px', fontSize: '14px', marginTop: '10px'}}>View Projects</button>*/ }
       </div>
     </div>
   );

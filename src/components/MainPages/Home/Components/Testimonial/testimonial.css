@@ -1,0 +1,50 @@
+.test-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.test-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  animation: float-in 1s ease-out;
+  color: #c384f5;
+}
+
+.test-people {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.test-person {
+  text-align: center;
+  width: 300px;
+}
+
+.test-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.test-person h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.test-person h6 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.test-person p{
+    color: #4d4c6d;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}

@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import Intro from './Components/Intro/Intro.js';
 import About from './Components/About/About.js';
+import Testimonial from './Components/Testimonial/index.js';
 import HeroCarousel from './Components/HeroCarousel/HeroCarousel.js';
 import ClientsCarousel from './Components/ClientsCarousel/ClientsCarousel.js';
 
@@ -21,6 +22,9 @@ const Home = () => {
             </section>
             <section style={{background: 'black', height: '100%', width: '100vw', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <About />
+            </section>
+            <section style={{background: 'black', height: '100%', width: '100vw', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <Testimonial />
             </section>
         </div>
 
